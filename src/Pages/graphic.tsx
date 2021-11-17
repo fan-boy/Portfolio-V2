@@ -49,7 +49,7 @@ const GraphicPage = () =>{
                 }else if(p.type === GraphicsType.photograph){
                     photographRenderer.push(
                         <div className=" p-4 my-6 ">
-                        <img className="w-full bg-yellow-100  min-h-96  rounded-lg max-h-screen object-scale-down" src = {p.url} alt="photograph"/>
+                        <img className="w-full bg-yellow-100  min-h-96  rounded-lg max-h-screen " src = {p.url} alt="photograph"/>
                        </div>
                     )
                 }
