@@ -5,7 +5,7 @@ import HomePage from "../Pages/homepage";
 import AboutPage from "../Pages/about";
 import WorkPage from "../Pages/work";
 import ResumePage from "../Pages/resume";
-import GraphicPage from "../Pages/graphic";
+import GraphicPage from "../Pages/visualart";
 
 const customHistory = createBrowserHistory();
 
@@ -22,7 +22,7 @@ const AppRoutes = () =>{
 
           <Route path="/resume" element={<ResumePage/>} />
 
-          <Route path="/graphic" element={<GraphicPage/>} />
+          <Route path="/visualart" element={<GraphicPage/>} />
           
           <Route path="/" element={<HomePage/>}/>
           

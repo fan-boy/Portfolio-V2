@@ -94,7 +94,7 @@ const GraphicPage = () =>{
 
     return(
         <div className = "w-full min-h-screen p-10 overflow-y-scroll bg-yellow-200">
-            <Navbar selected="graphic" />
+            <Navbar selected="visualart" />
            
 <div className = "w-full pt-5 sm:p-10 text-center">
 {illustrationRenderer.length > 0 && <>

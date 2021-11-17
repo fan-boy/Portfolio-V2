@@ -15,8 +15,8 @@ interface HomePageCardsProps{
 export enum HomeCardType{
     Work,
     About,
-    Life,
-    Intrests
+    Resume,
+    VisualArt
 }
 
 const HomePageCard = (props:HomePageCardsProps) =>{
@@ -28,10 +28,10 @@ const HomePageCard = (props:HomePageCardsProps) =>{
         case HomeCardType.About:
             hoverImage=About;
             break;
-        case HomeCardType.Life:
+        case HomeCardType.Resume:
             hoverImage = Resume;
             break;
-        case HomeCardType.Intrests:
+        case HomeCardType.VisualArt:
             hoverImage = Intrest;
             break;
 

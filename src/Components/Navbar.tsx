@@ -27,7 +27,7 @@ const Navbar =(props:NavbarProps) =>{
             icon = "📃";
             color = "text-blue-500";
             break;
-        case "graphic":
+        case "visualart":
             icon = "🎨";
             color = "text-yellow-500";
             break;
@@ -45,7 +45,7 @@ const Navbar =(props:NavbarProps) =>{
             {cardClicked !=="" && cardClicked ==="home" && <Navigate to="/"/>}
             <span onClick={() =>onClick("home")} className={`text-2xl ${color} hover:text-gray-500 cursor-pointer`}> aaditya. {icon}</span>
             {!props.hideNavbar &&
-            <div className="hidden sm:flex sm:flex-row gap-4 items-end">
+            <div className="hidden sm:flex sm:flex-row gap-6 items-end">
             
             <span 
             className = {props.selected ==="work"?"text-2xl cursor-default text-purple-500":"text-xl text-gray-500 cursor-pointer hover:text-purple-500"}
@@ -60,9 +60,9 @@ const Navbar =(props:NavbarProps) =>{
             onClick = {() =>onClick("resume")}
             >resume</span>
             <span 
-            className = {props.selected ==="graphic"?"text-2xl cursor-default text-yellow-500":"text-xl text-gray-500 cursor-pointer hover:text-yellow-500"}
-            onClick = {() =>onClick("graphic")}
-            >illustrations/pictures</span>
+            className = {props.selected ==="visualart"?"text-2xl cursor-default text-yellow-500":"text-xl text-gray-500 cursor-pointer hover:text-yellow-500"}
+            onClick = {() =>onClick("visualart")}
+            >visual art</span>
             </div>
 }   
 {props.hideNavbar &&
