@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../Components/footer";
 import HomePageCard from "../Components/HomePage/HomepageCards";
 import Navbar from "../Components/Navbar";
 import WorkCard from "../Components/Work/WorkCard";
@@ -115,6 +116,7 @@ const GraphicPage = () =>{
   
 
 </div>
+<Footer color="yellow" showSocials/>
 </div>
 
         

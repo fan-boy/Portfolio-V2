@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Components/footer";
 import Navbar from "../Components/Navbar";
 
 import Resume from '../Components/ResumePage/resume.png';
@@ -19,7 +20,7 @@ const ResumePage = () =>{
                 </span>
                
             </div>
-
+            <Footer color="blue" showSocials/>
         </div>
     )
 }

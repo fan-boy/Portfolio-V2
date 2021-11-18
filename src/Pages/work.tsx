@@ -1,5 +1,6 @@
 import { loadavg } from "os";
 import React, { useEffect, useState } from "react";
+import Footer from "../Components/footer";
 import HomePageCard from "../Components/HomePage/HomepageCards";
 import Navbar from "../Components/Navbar";
 import WorkCard from "../Components/Work/WorkCard";
@@ -75,7 +76,7 @@ const WorkPage = () =>{
               { workRenderer}
                 
             </div>
-
+            <Footer color="purple" showSocials/>
          </div>
 
 

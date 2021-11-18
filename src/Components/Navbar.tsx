@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import Socials from "./AboutPage/Socials";
 
 interface NavbarProps{
@@ -11,7 +11,7 @@ interface NavbarProps{
 
 const Navbar =(props:NavbarProps) =>{
     const [cardClicked,setCardClicked] = useState("");
-    
+    const location = useLocation();
     let icon = "";
     let color = "text-gray-500";
     switch(props.selected){
@@ -35,7 +35,9 @@ const Navbar =(props:NavbarProps) =>{
     }
 
     const onClick = (moniker:string) =>{
+        if(moniker === "home" && location.pathname==="/"){}else{
         setCardClicked(moniker);   
+        }
     }
     
     

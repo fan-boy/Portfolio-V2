@@ -4,6 +4,7 @@ import {
     Navigate,
   } from "react-router-dom";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/footer";
 
 const HomePage = () =>{
     const [cardClicked,setCardClicked] = useState("");
@@ -11,7 +12,8 @@ const HomePage = () =>{
      setCardClicked(id);   
     }
     return(
-        <div className = "w-full h-screen p-10 bg-gray-200">
+        <div className="p-10 w-full bg-gray-200">
+        <div className = "w-full h-screen ">
             {cardClicked !=="" && <Navigate to={`/${cardClicked}`}/>}
             <Navbar hideNavbar selected=""/>
 
@@ -22,6 +24,8 @@ const HomePage = () =>{
                 <HomePageCard type={HomeCardType.VisualArt} color="yellow" text="visual art" id="visualart" onCardClick={onCardClick} />
             </div>
 
+        </div>
+        <Footer color="gray"/>
         </div>
     )
 }

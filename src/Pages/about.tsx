@@ -1,5 +1,6 @@
 import React from "react";
 import Socials from "../Components/AboutPage/Socials";
+import Footer from "../Components/footer";
 import Navbar from "../Components/Navbar";
 import me from './me.png';
 
@@ -20,7 +21,7 @@ const AboutPage = () =>{
                     and have been working since.
                     </p>
                     <img className="sm:w-1/2 h-third object-scale-down" src={me} alt="It Me"/>
-                    <Socials className="flex  flex-row gap-5 items-center"/>
+                    <Socials className="flex mt-2 flex-row gap-5 items-center"/>
                 </span>
                 <span className="w-full min-h-half text-green-500">
                     <span className="hidden sm:block text-4xl font-bold text-green-600">
@@ -47,11 +48,24 @@ const AboutPage = () =>{
                         
                         
                     </p>
+                    <p className="mt-10">
+                        <p className="text-3xl  font-semibold text-green-500">
+                        When I am not working
+                        </p>
+                        <p className = "mt-5"> 
+                            My other intrests include running,cooking,playing video games, travelling and keeping myself updated
+                            with the latest technological advancements. I'm in love with the mountains and find nothing better than a good
+                            sunrise or a sunset. 
+                            
+                        </p>
+                        
+                        
+                    </p>
 
 
                 </span>
             </div>
-
+            <Footer color="green"/>
         </div>
     )
 }
