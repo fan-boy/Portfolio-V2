@@ -1,6 +1,6 @@
 export interface Work{
     id:number,
-    imgSrc:string,
+    imageSrc:string,
     title:string,
     service:string,
     url:string

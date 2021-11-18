@@ -43,11 +43,11 @@ const WorkPage = () =>{
             workDetails.forEach(p => {
                 if(p.id %2 !==0){
                     renderer.push(
-                        <WorkCard class="sm:justify-self-end" title={p.title} service={p.service} />
+                        <WorkCard class="sm:justify-self-end" title={p.title} service={p.service} imgUrl={p.imageSrc} />
                     )
                 }else{
                     renderer.push(
-                        <WorkCard class="mt-5" title={p.title} service={p.service}/>
+                        <WorkCard class="mt-5" title={p.title} service={p.service} imgUrl={p.imageSrc} />
                     )
                 }
             });

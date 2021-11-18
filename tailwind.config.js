@@ -66,7 +66,10 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
-
+      100:'28rem',
+      102:'30rem',
+      104:'32rem',
+      'workcard':'448px'
     },
     animation: {
       none: 'none',
