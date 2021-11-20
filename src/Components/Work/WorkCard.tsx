@@ -19,7 +19,7 @@ const WorkCard = (props:WorkCardProps) =>{
     }
     
     return(
-        <span onClick={onClick} className={`w-full  lg:w-workcard relative bg-purple-100 h-100 rounded-lg overflow-hidden ${props.class}`+ (props.loading? ' animate-pulse':'')} >
+        <span onClick={onClick} className={`w-full  lg:w-workcard relative bg-purple-100 h-100 rounded-lg overflow-hidden ${props.class}`+ (props.loading? ' animate-pulse':'') + (props.url !==""?" cursor-pointer":"")} >
            {!props.loading && <img className="w-full  h-full object-scale-down" src={props.imgUrl} alt="test"/>}
            <span className="absolute bottom-3 left-1/10 text-2xl text-purple-500 flex flex-col" >
                 {props.title}
