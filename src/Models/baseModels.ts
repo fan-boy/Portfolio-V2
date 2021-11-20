@@ -3,7 +3,8 @@ export interface Work{
     imageSrc:string,
     title:string,
     service:string,
-    url:string
+    url:string,
+    description:string
 }
 
 export interface Graphics{

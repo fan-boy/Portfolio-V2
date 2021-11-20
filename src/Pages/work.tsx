@@ -43,24 +43,24 @@ const WorkPage = () =>{
             workDetails.forEach(p => {
                 if(p.id %2 !==0){
                     renderer.push(
-                        <WorkCard class="sm:justify-self-end" title={p.title} service={p.service} imgUrl={p.imageSrc} />
+                        <WorkCard class="sm:justify-self-end" title={p.title} service={p.service} imgUrl={p.imageSrc} description = {p.description} url={p.url} />
                     )
                 }else{
                     renderer.push(
-                        <WorkCard class="mt-5" title={p.title} service={p.service} imgUrl={p.imageSrc} />
+                        <WorkCard class="mt-5" title={p.title} service={p.service} imgUrl={p.imageSrc} description = {p.description} url={p.url}/>
                     )
                 }
             });
             
         }else{
             renderer.push(
-                <WorkCard class="sm:justify-self-end" title={""} service={""} loading />
+                <WorkCard class="sm:justify-self-end" title={""} service={""} loading description={""} url = {""} />
             );
             renderer.push(
-                <WorkCard class="mt-5" title={""} service={""} loading/>
+                <WorkCard class="mt-5" title={""} service={""} loading description="" url = {""} />
             );
             renderer.push(
-                <WorkCard class="sm:justify-self-end" title={""} service={""} loading/>
+                <WorkCard class="sm:justify-self-end" title={""} service={""} loading description="" url = {""} />
             );
         }
         setWorkRenderer(renderer);
