@@ -34,8 +34,7 @@
     <a href="https://aadityashete.me"><strong>Explore</strong></a>
     <br />
     <br />
-    <a href="https://github.com/fan-boy/Portfolio-v2/issues">Report Bug</a>
-    ·
+    <a href="https://github.com/fan-boy/Portfolio-v2/issues/new">Report Bug</a>
   </p>
 </div>
 
