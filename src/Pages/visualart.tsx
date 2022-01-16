@@ -99,7 +99,7 @@ const GraphicPage = () =>{
            
 <div className = "w-full pt-5 sm:p-10 text-center">
 {illustrationRenderer.length > 0 && <>
-<span className="text-4xl font-bold text-yellow-600">Illustrations</span></>}
+<span className="text-4xl font-bold text-yellow-600">Illustrations and art</span></>}
 <div className="flex flex-col sm:block sm:masonry before:box-inherit after:box-inherit">
 {illustrationRenderer}
   </div>
