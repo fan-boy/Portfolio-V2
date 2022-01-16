@@ -148,7 +148,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Aaditya Shete  - aadityadhete@gmail.com
+Aaditya Shete  - aadityashete@gmail.com
 
 Project Link: [https://github.com/fan-boy/Portfolio-v2](https://github.com/fan-boy/Portfolio-v2)
 
@@ -173,4 +173,4 @@ Project Link: [https://github.com/fan-boy/Portfolio-v2](https://github.com/fan-b
 [license-url]: https://github.com/fan-boy/Portfolio-v2/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/aaditya-s-49936112b/
-[product-screenshot]: images/homepage.png
+[product-screenshot]: public/images/homepage.png
