@@ -14,6 +14,7 @@ export interface Graphics{
 
 export enum GraphicsType{
     Illustration ='illustration',
-    photograph = 'photograph'
+    photograph = 'photograph',
+    gencode = "gencode"
 
 }
