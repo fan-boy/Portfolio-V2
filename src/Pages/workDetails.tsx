@@ -7,7 +7,7 @@ import WorkCard from "../Components/Work/WorkCard";
 import { callApiWithToken } from "../fetch";
 import { Work } from "../Models/baseModels";
 
-const WorkPage = () =>{
+const WorkDetailsPage = () =>{
     const [cardClicked,setCardClicked] = useState("");
     const [isLoading,setLoading] = useState(false);
     const [workDetails,setWorkDetails] = useState<Work[]>([]);
@@ -67,7 +67,7 @@ const WorkPage = () =>{
     },[workDetails,isLoading])
 
     return(
-        <div className = "w-full min-h-screen p-10 bg-purple-200">
+        <div className = "w-full min-h-screen p-10 overflow-y-scroll bg-purple-200">
             <Navbar selected="work" />
            
 
@@ -83,4 +83,4 @@ const WorkPage = () =>{
     )
 }
 
-export default WorkPage;
+export default WorkDetailsPage;

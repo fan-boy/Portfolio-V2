@@ -46,6 +46,7 @@ const Navbar =(props:NavbarProps) =>{
             {cardClicked !=="" && cardClicked !=="home" && <Navigate to={`/${cardClicked}`}/>}
             {cardClicked !=="" && cardClicked ==="home" && <Navigate to="/"/>}
             <span onClick={() =>onClick("home")} className={`text-2xl ${color} hover:text-gray-500 cursor-pointer`}> aaditya. {icon}</span>
+           
             {!props.hideNavbar &&
             <div className="hidden sm:flex sm:flex-row gap-6 items-end">
             
