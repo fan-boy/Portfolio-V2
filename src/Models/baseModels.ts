@@ -2,6 +2,7 @@ export interface Work{
     id:number,
     imageSrc:string,
     title:string,
+    link:string,
     service:string,
     url:string,
     description:string

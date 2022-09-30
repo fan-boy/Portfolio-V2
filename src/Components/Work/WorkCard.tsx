@@ -7,15 +7,18 @@ interface WorkCardProps{
     imgUrl?:string,
     loading?:boolean,
     description:string
-    url:string
+    url:string,
+    link:string,
+    onCardClick:(id:string,link?:string) => void;
 }
 
 const WorkCard = (props:WorkCardProps) =>{
 
     const onClick=() =>{
-        if(props.url && props.url!==""){
-            window.open(props.url,'_blank');
-        }
+        props.onCardClick(props.link,props.url);
+        // if(props.url && props.url!==""){
+        //     window.open(props.url,'_blank');
+        // }
     }
     
     return(

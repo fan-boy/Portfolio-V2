@@ -7,6 +7,7 @@ import me from './me.png';
 const AboutPage = () =>{
     return(
         <div className = "w-full min-h-screen p-10 bg-green-200">
+            <div className="xl:container xl:mx-auto">
             <Navbar selected="about"/>
 
             <div className = "w-full min-h-half pt-5 md:p-10 gap-2 flex flex-col sm:flex-row ">
@@ -68,6 +69,7 @@ const AboutPage = () =>{
                 </span>
             </div>
             <Footer color="green"/>
+            </div>
         </div>
     )
 }

@@ -42,7 +42,7 @@ const Navbar =(props:NavbarProps) =>{
     
     
     return(
-        <div className="flex flex-row sm:justify-between">
+        <div className="xl:container xl:mx-auto flex flex-row sm:justify-between">
             {cardClicked !=="" && cardClicked !=="home" && <Navigate to={`/${cardClicked}`}/>}
             {cardClicked !=="" && cardClicked ==="home" && <Navigate to="/"/>}
             <span onClick={() =>onClick("home")} className={`text-2xl ${color} hover:text-gray-500 cursor-pointer`}> aaditya. {icon}</span>

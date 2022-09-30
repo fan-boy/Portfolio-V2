@@ -38,32 +38,8 @@ const WorkDetailsPage = () =>{
     
     useEffect(() =>{
         let renderer:JSX.Element[] = [];
-        if(workDetails && workDetails.length >0 && !isLoading){
-            workDetails.sort((a,b) => a.id-b.id);
-            workDetails.forEach(p => {
-                if(p.id %2 !==0){
-                    renderer.push(
-                        <WorkCard class="sm:justify-self-end" title={p.title} service={p.service} imgUrl={p.imageSrc} description = {p.description} url={p.url} />
-                    )
-                }else{
-                    renderer.push(
-                        <WorkCard class="mt-5" title={p.title} service={p.service} imgUrl={p.imageSrc} description = {p.description} url={p.url}/>
-                    )
-                }
-            });
-            
-        }else{
-            renderer.push(
-                <WorkCard class="sm:justify-self-end" title={""} service={""} loading description={""} url = {""} />
-            );
-            renderer.push(
-                <WorkCard class="mt-5" title={""} service={""} loading description="" url = {""} />
-            );
-            renderer.push(
-                <WorkCard class="sm:justify-self-end" title={""} service={""} loading description="" url = {""} />
-            );
-        }
-        setWorkRenderer(renderer);
+        
+        
     },[workDetails,isLoading])
 
     return(
@@ -72,7 +48,91 @@ const WorkDetailsPage = () =>{
            
 
 
-         <div className = "w-full pt-5 sm:p-10 gap-4 grid grid-cols-1 sm:grid-cols-2 ">
+         <div className = "w-full relative pt-5 ">
+              <div className="flex sm:items-center flex-col  ">
+              <p className="text-7xl sm:text-9xl w-1/2 -ml-10 lg:ml-0 font-bold text-purple-500">
+              {`Chain\nReactive\nLLC`}
+              </p>
+              <p className="text-3xl xl:text-5xl w-1/2 -ml-10 lg:ml-0 font-bold text-purple-500">
+              {`A restaurant website project`}
+              </p>
+              </div>
+              {/* <p className="text-3xl mt-10 font-bold text-purple-500">
+                Overview  Problem Statement  Roles  Goals   Design Process  Results
+              </p> */}
+            <div>
+              <div className="my-20">
+              
+              <p className=" sticky top-0 text-3xl xl:text-5xl mt-10 font-bold text-purple-500">
+                Overview  
+              </p>
+              <div className="text-xl xl:text-3xl mt-10 bg-purple-100 p-10 rounded text-purple-500">
+              Chain Reactive LLC is a Pennsylvania based startup in the food and beverage industry.  We are currently developing a responsive website that would provide a comprehensive experience for users looking to order online from local businesses. We are doing this while being constantly in touch with business owners for their feedback. 
+As a part of this project, we wanted to give the consumer more flexibility in terms of their order delivery or pick up times as the business owners felt that this would be an important feature. 
+</div>
+              <div>
+                  <div className="h-screen">
+
+                  </div>
+              </div>  
+              </div>
+
+              <div className="my-20">
+              <div className = "w-full sticky top-0">
+              <p className="text-3xl mt-10 font-bold text-purple-500">
+                Problem Statement  
+              </p>
+              </div>
+              <div>
+                  
+              </div>
+              </div>
+
+              <div className="my-20">
+              <div className = "w-full sticky top-0">
+              <p className="text-3xl mt-10 font-bold text-purple-500">
+                Roles
+              </p>
+              </div>
+              <div>
+                  
+              </div>
+              </div>
+
+              <div className="my-20">
+              <div className = "w-full sticky top-0">
+              <p className="text-3xl mt-10 font-bold text-purple-500">
+                Goals
+              </p>
+              </div>
+              <div>
+                  
+              </div>
+              </div>
+
+              <div className="my-20">
+              <div className = "w-full sticky top-0">
+              <p className="text-3xl mt-10 font-bold text-purple-500">
+                Design Process
+              </p>
+              </div>
+              <div>
+                  
+              </div>
+              </div>
+
+              <div className="my-20">
+              <div className = "w-full sticky top-0">
+              <p className="text-3xl mt-10 font-bold text-purple-500">
+                Results
+              </p>
+              </div>
+
+              <div>
+                  
+              </div>
+              </div>
+            </div>
               { workRenderer}
                 
             </div>

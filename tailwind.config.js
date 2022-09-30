@@ -6,6 +6,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
+      'smmobile': '350px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -69,6 +70,7 @@ module.exports = {
       100:'28rem',
       102:'30rem',
       104:'32rem',
+      '-10':'-2.5rem',
       'workcard':'448px'
     },
     animation: {

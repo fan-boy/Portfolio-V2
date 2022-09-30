@@ -123,6 +123,7 @@ const GraphicPage = () => {
 
     return (
         <div className="w-full min-h-screen p-10 bg-yellow-200">
+             <div className="xl:container xl:mx-auto">
             <Navbar selected="visualart" />
 
             <div className="w-full pt-5 sm:p-10 text-center">
@@ -162,6 +163,7 @@ const GraphicPage = () => {
 
             </div>
             <Footer color="yellow" showSocials />
+            </div>
         </div>
 
 
