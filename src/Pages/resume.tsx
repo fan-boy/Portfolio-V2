@@ -7,7 +7,7 @@ import Resume from '../Components/ResumePage/resume.png';
 const ResumePage = () =>{
     return(
         <div className = "w-full min-h-screen p-10 bg-blue-200">
-             <div className="lg:container lg:mx-auto">
+             <div className="xl:container xl:mx-auto">
             <Navbar selected="resume"/>
 
             <div className = "h-full pt-5 md:p-10 flex flex-col justify-center">

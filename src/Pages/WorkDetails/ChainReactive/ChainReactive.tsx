@@ -111,7 +111,7 @@ const ChainReactive = () => {
                 Overview
               </p>
               <div className={textStyle}>
-                <p className="w-2/3">
+                <p className="sm:w-2/3">
                 Chain Reactive LLC is a Pennsylvania-based startup in the food and beverage industry. 
                 They have a POS system and wanted to develop an online ordering platform that would integrate with the POS. 
                 That's where I came into the picture. My aim was to create a responsive website that would provide a 
@@ -145,8 +145,8 @@ const ChainReactive = () => {
                   {"Responsibilities & Contribution"}
                 </p>
                 <div className={textStyle}>
-                  <p className="sm:w-2/3">
-                    <ul className="list-disc">
+                  <p className= "sm:w-2/3">
+                    <ul className="p-5 list-disc">
                       <li>
                       As the product design lead, I led the design vision and helped set the product direction.
                         Ideated solutions, prototyped them and performed user acceptance testing.
@@ -230,7 +230,7 @@ const ChainReactive = () => {
                     I conducted several interviews with businesses and customers to understand the main issues.
                     Most of the businesses that we spoke to were restaurants. From the business owner's interviews, I concluded the following-
 
-                    <ul className=" mt-5 list-disc">
+                    <ul className="p-5 mt-5 list-disc">
                       <li >
                         The business owners wanted the customers to schedule the order at a specific time so that they could plan their resources accordingly.
                       </li>
@@ -246,7 +246,7 @@ const ChainReactive = () => {
 
                   <p className="mt-5 sm:w-2/3">
                     From customers interviews, I concluded that -
-                    <ul className="list-disc">
+                    <ul className="list-disc p-5">
                       <li >
                         They wanted the ability to order in advance for special occasions like parties.
                       </li>
@@ -302,7 +302,7 @@ These led to the User Story -
                 </p>
                 <div className={textStyle + " flex sm:flex-row flex-col"}>
                   <img className="w-full sm:w-1/2 object-contain" src={initialPrototyping} alt="InitialPrototyping" />
-                  <p className="sm:w-1/2 p-5">
+                  <p className="sm:w-1/2">
                     Our initial design included a day picker followed by a shift (Breakfast,Lunch,Dinner) picker and then a time picker.
                     Once the user made a time selection the menu section of the webpage would be populated. The business owners liked this design of the user having to explicitly select the timing.
 
@@ -312,12 +312,12 @@ These led to the User Story -
               </div>
               <div className={textStyle}>
 
-                <p className="w-2/3 p-5">
+                <p className="sm:w-2/3">
                 Although this design satisfied the needs of the business owners, I felt it was not user-friendly from the customer's perspective.
                   So I decided to create a simple google form and survey the customers to understand their perspectives. They were also asked their opinion
                   on this design. Some of the questions were as follows-
                   <br></br> <br></br>
-                  <ul className="list-disc">
+                  <ul className="p-5 list-disc">
                     <li>
                     Would you be comfortable selecting a pickup/delivery time every time you wanted to order something?
                     </li>
@@ -365,13 +365,13 @@ These led to the User Story -
                 </p>
                 <div className={textStyle}>
                   <div className="flex sm:flex-row flex-col">
-                  <p className="sm:w-1/2 p-5">
+                  <p className="sm:w-1/2">
                   I then came up with this design prototype where ASAP delivery was selected by default, and only if the user wanted to order for a future time, he had to make a change to it. The time picker and shift picker (Breakfast, Lunch and Dinner) were hidden when ASAP was selected and only showed up when Today or Later was selected.
                   <br>
                   </br>
                   <br></br>
                   However, this prototype was rejected during testing by the consumers. From their feedback, I concluded that - 
-                   <ul className="list-disc">
+                   <ul className="list-disc p-5">
                      <li>
                      They felt that the time picker section that appeared once the user clicked on "Today" or "Later" was overwhelming when it appeared on the screen. It needed to be moved to a separate component.
 
@@ -399,7 +399,7 @@ These led to the User Story -
                 <div className={textStyle}>
                   <div className="flex sm:flex-row flex-col">
                   <img className="w-full sm:w-1/2 object-contain" src={FinalPrototype} alt="UpdatedPrototyping" />
-                  <p className="sm:w-1/2 p-5">
+                  <p className="sm:w-1/2">
                   The following design iteration was a simple dropdown that displayed the current day's available shifts. By default, the current shift or the next available shift was selected, and the menu was populated according to this. 
                   <br>
                   </br>
@@ -456,13 +456,13 @@ These led to the User Story -
               <div className={textStyle}>
                   <div className="sm:w-2/3">
                  
-                  <p className="p-5">
+                  <p>
                   We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers. 
 
                   <br>
                   </br>
                   <br></br>
-                  <ul className="list-disc">
+                  <ul className="list-disc p-5">
                   <li>
                   The end design was a very simple dropdown which didn’t clutter the screen unnecessarily. This worked from the user's perspective. 
 
