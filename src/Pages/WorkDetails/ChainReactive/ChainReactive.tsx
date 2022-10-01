@@ -149,10 +149,13 @@ const ChainReactive = () => {
                     <ul className="p-5 list-disc">
                       <li>
                       As the product design lead, I led the design vision and helped set the product direction.
-                        Ideated solutions, prototyped them and performed user acceptance testing.
                       </li>
+                      
                       <li>
                         Conducted participatory design sessions to help users and stakeholders express their needs.
+                      </li>
+                      <li>
+                      Ideated solutions, prototyped them and performed user acceptance testing.
                       </li>
                     </ul>
                   </p>
@@ -275,7 +278,6 @@ const ChainReactive = () => {
                   <p className="sm:w-2/3">
                   From this, we concluded that the businesses required the consumers to select a pick up time explicitly. <br></br><br></br>
                   This feature was rather crucial as it would affect the menu and prices of the items. It turned out to be more important than we thought.
-These led to the User Story -
                     <br></br>
                     These led to the User Story -
                     <br></br>
