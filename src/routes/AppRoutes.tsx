@@ -8,7 +8,7 @@ import GraphicPage from "../Pages/visualart";
 import WorkDetailsPage from "../Pages/workDetails";
 import ChainReactive from "../Pages/WorkDetails/ChainReactive/ChainReactive";
 import IM360 from "../Pages/WorkDetails/IM360";
-import Hive from "../Pages/WorkDetails/Hive";
+import Hive from "../Pages/WorkDetails/Hive/Hive";
 
 
 const AppRoutes = () =>{
