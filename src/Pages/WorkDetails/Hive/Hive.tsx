@@ -125,7 +125,7 @@ const ChainReactive = () => {
 
 
                     I along with the team had to come up with a design solution and architect the technical development.
-                    My key roles revolved around the design of the mobile app and the design and development of the desktop app,
+                    My key roles revolved around the design of the mobile app and the design and development of the desktop app.
 
 
 
@@ -330,7 +330,7 @@ employee office visits in batches, assign them seats and have access to daily at
             <div className="my-20">
               <div className="w-full">
                 <p className={headingStyle}>
-                  {"Initial Protyping"}
+                  {"Initial Prototyping"}
                 </p>
                 <div className={textStyle}>
                   <p className="w-full sm:w-2/3">
