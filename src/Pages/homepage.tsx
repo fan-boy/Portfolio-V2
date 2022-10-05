@@ -12,8 +12,8 @@ const HomePage = () =>{
      setCardClicked(id);   
     }
     return(
-        <div className="p-10 w-full bg-gray-200">
-        <div className = "w-full h-screen ">
+        <div className="p-10 w-full  h-screen bg-gray-200">
+        <div className = "w-full  h-full">
             {cardClicked !=="" && <Navigate to={`/${cardClicked}`}/>}
             <Navbar hideNavbar selected=""/>
 
