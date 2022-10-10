@@ -178,11 +178,7 @@ const ChainReactive = () => {
 
                 <div className="text-lg xl:text-xl pt-10 smmobile:p-10 rounded-md text-purple-500">
                   <hr className="border-1 border-purple-500" />
-                  <p className="m-5">
-                  Some of my work during this stint is under NDA, so
-                    I can showcase only publicly released information.
-                  </p>
-                  <hr className="border-1 border-purple-500" />
+                  
                 </div>
               </div>
               <div>
@@ -295,34 +291,14 @@ employee office visits in batches, assign them seats and have access to daily at
                 <p className={headingStyle}>
                   {"App Design"}
                 </p>
-                <div className={textStyle + " flex sm:flex-row flex-col"}>
+                <div className={textStyle + " flex flex-col"}>
                  
-                  <p className="sm:w-1/2">
+                  <p className="">
                   We came up with a three-application design solution. 
                   <br></br> <br></br>
-                  <ul className="p-5 list-disc">
-                    <li>
-                    A <span className="font-semibold">web app</span> that would be provided to the <span className="font-semibold">BCP, HR and Admin team </span> where they could perform several actions. 
-                    They could upload employee schedules, download reports displaying employee attendance, health status and 
-                    send important communication to all employees or targeted groups.
-
-                    </li>
-                    <li>
-                    A <span className="font-semibold">mobile app</span> that the <span className="font-semibold">employees</span> would use. 
-                    They had to fill in mandatory questions like vaccination details on the first login. 
-                    They would be able to access their office schedule and raise ad-hoc requests to visit the office and display their entry pass for the same. 
-                    They could also update their health status in case they fell sick.
-                    </li>
-                    <li>
-                    A third <span className="font-semibold">mobile app</span> was to be provided to the <span className="font-semibold">Admin team and security guards</span> in the office 
-                    in which they would fill in the temperature and oximeter reading of the employees requesting entry into the office after scanning 
-                    their entry pass. Based on the scan and the temperature and oximeter reading, 
-                    the security team was notified whether to allow or deny entry to the employee.
-                    </li>
-
-                  </ul>
+                  
                   </p>
-                   <img className="w-full sm:w-1/2 object-contain" src={AppFlow} alt="AppFlow" />
+                   <img className="w-full object-contain" src={AppFlow} alt="AppFlow" />
                 </div>
               </div>
               

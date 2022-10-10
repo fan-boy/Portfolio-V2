@@ -14,7 +14,6 @@ import FinalPrototype from "./finalPrototype.png";
 import HiFIPrototype from "./hiFiPrototype.png";
 import DesktopView from "./DesktopView.gif";
 import MobileView from "./MobileView.gif";
-import designProcess from "./designProcess.png";
 
 const ChainReactive = () => {
   const [cardClicked, setCardClicked] = useState("");
@@ -111,7 +110,9 @@ const ChainReactive = () => {
               </p>
               <div className={textStyle}>
                 <p className="sm:w-2/3">
-                  My aim was to create a responsive website that would provide a
+                  Chain Reactive LLC is a Pennsylvania-based startup in the food and beverage industry.
+                  They have a POS system and wanted to develop an online ordering platform that would integrate with the POS.
+                  That's where I came into the picture. My aim was to create a responsive website that would provide a
                   comprehensive experience for users looking to order online from local businesses.
                   I did this by constantly being in touch with the stakeholders and involving them in the design process.
                 </p>
@@ -207,7 +208,9 @@ const ChainReactive = () => {
                 <div className="text-lg xl:text-xl pt-10 smmobile:p-10 rounded-md text-purple-500">
                   <hr className="border-1 border-purple-500" />
                   <p className="m-5">
-                  Even though I worked on the complete project, I will walk you through the Order Scheduling module for the purpose of this portfolio.
+                    Some of my work during this stint is under NDA, so
+                    I can showcase only publicly released information.
+                    Hence I will walk you through the design process of one feature - Order Scheduling.
                   </p>
                   <hr className="border-1 border-purple-500" />
                 </div>
@@ -216,19 +219,6 @@ const ChainReactive = () => {
 
               </div>
             </div>
-
-            <div>
-              <div className="w-full justify-items-center">
-                <div className={ "bg-purple-100 smmobile:p-5 p-5 -mx-5 sm:p-10 rounded-md text-purple-500"} >
-                  <div className="w-full flex text-center justify-center">
-              <img className="sm:w-2/3 object-contain" src={designProcess} alt="DesignProcess" />
-              </div>
-               </div> 
-               </div>
-               
-             
-            </div>
-
 
             <div className="my-20">
               <div className="w-full">
@@ -400,10 +390,38 @@ const ChainReactive = () => {
 
               </div>
             </div>
+
             <div className="my-20">
               <div className="w-full">
                 <p className={headingStyle}>
-                  {"Final Prototype"}
+                  {"Final Prototyping"}
+                </p>
+                <div className={textStyle}>
+                  <div className="flex sm:flex-row flex-col">
+                    <img className="w-full sm:w-1/2 object-contain" src={FinalPrototype} alt="UpdatedPrototyping" />
+                    <p className="sm:w-1/2">
+                      The following design iteration was a simple dropdown that displayed the current day's available shifts. By default, the current shift or the next available shift was selected, and the menu was populated according to this.
+                      <br>
+                      </br>
+                      <br></br>
+                      The dropdown also had a schedule option. A popup would appear on clicking the schedule option, where the user could make further selections.
+                      <br>
+                      </br>
+                      <br></br>
+                      This prototype was accepted by both the customers and business owners, and I decided to implement it.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div className="my-20">
+              <div className="w-full">
+                <p className={headingStyle}>
+                  {"HiFi Prototype"}
                 </p>
                 <div className={textStyle}>
 
@@ -458,7 +476,11 @@ const ChainReactive = () => {
                     During this process, I learnt that it’s essential to consider the requirements of all
                     your user groups and develop a design that works for them.
                     Each user group might have different roles and perform various actions.
-                    Making no assumptions and adhering to the design process will yield results that satisfy the needs of all stakeholders.
+                    The business owners are our customers,
+                    who are going to pay us, but it was vital for us to focus on their
+                    customers as well, as that’s how they will be making money from them.
+                    <br></br><br></br>
+                    The product is still in its development phase, and all these learnings are helping us improve the user experience for other features we are working on.
                   </p>
 
                 </div>

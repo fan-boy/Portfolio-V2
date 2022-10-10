@@ -17,7 +17,7 @@ const AboutPage = () =>{
                     </span>
                     <p className="sm:hidden mt-10">
 
-                    I’m Aaditya Shete, a <span className="font-semibold">UX Designer and Developer</span> currently pursuing masters in
+                    I’m Aaditya Shete, a <span className="font-semibold">Full-stack Developer and an aspiring Product Designer</span> currently pursuing masters in
                      <span className="font-semibold"> Human Computer Interaction</span> at University of Maryland. 
                     I completed my Undergraduate degree in Computer Science in 2018
                     and have been working since.
