@@ -197,55 +197,11 @@ const ChainReactive = () => {
               <div className={textStyle}>
                 <p className="sm:w-2/3">
                   We started by conducting extensive interviews with the BCP and the HR team to get a clear understanding of their requirements.
-                  From this we concluded that they needed a product which could-
+                  
 
-
-                  <ul className="p-5 mt-5 list-disc">
-                    <li >
-                      Keep track of employees health status, their current location and if they had private vehicles.
-                    </li>
-                    <li >
-                      Keep track of employees vaccination status as only those with complete vaccination were going to be called to office.
-                    </li>
-                    <li >
-                      Ability to schedule employees visit to office in batches.
-                    </li>
-                    <li >
-                      Ability to keep track of employees attendance on a daily basis.
-                    </li>
-                    <li >
-                      Ensure safety of employees visiting office.
-                    </li>
-                    <li >
-                      Ability to deny entry to office to employees if they do not meet the temperature or oximeter requirements.
-                    </li>
-                    <li >
-                      Ability to send important communication to all employees or employees of a certain location.
-                    </li>
-                  </ul>
-
+                  
                 </p>
 
-                <p className="mt-5 sm:w-2/3">
-                  We then interviewed few employees to understand their needs out of this product. We got to know that the employees wanted-
-
-                  <ul className="list-disc p-5">
-                    <li >
-                      Ability to request ad-hoc visits to office for issues like getting their laptops fixed or replaced.
-                    </li>
-                    <li >
-                      Ability to see the people who are going to be visiting office at the same time as them so that they could get in touch with them.
-                    </li>
-                    <li >
-                      Ability to see their schedule for the current month.
-                    </li>
-                    <li >
-                      Ensure safety of employees visiting office.
-                    </li>
-
-                  </ul>
-
-                </p>
                 <img className="w-full sm:w-2/3 object-contain" src={GroupInterviews} alt="UpdatedPrototyping" />
                 Conducting online Interviews
               </div>
@@ -262,7 +218,7 @@ const ChainReactive = () => {
               </p>
               <div className={textStyle}>
                 <p className="sm:w-2/3">
-                  From this we concluded that there was a need of more than one app. There was one that the BCP and the HR teams will use and one for the employees. <br></br><br></br>
+                We concluded that there was a need of more than one app. There was one that the BCP and the HR teams will use and one for the employees. <br></br><br></br>
 
                   <br></br>
                   The User Story for the BCP/HR app was as follows-
@@ -312,13 +268,6 @@ const ChainReactive = () => {
                 {"Initial Prototyping"}
               </p>
               <div className={textStyle}>
-                <p className="w-full sm:w-2/3">
-                  Due to time constraints, we only came up with paper prototypes to get a basic idea of the design. We tried to keep the design as simple and minimalistic as possible.
-                  During this phase, we were constantly sharing the design with the stakeholders and getting their feedback, and updating them.
-                  While we were coming up with the design, the UI specialist in our team was developing assets.
-                </p>
-                <br></br>
-                <br></br>
                 <div className="flex sm:flex-row flex-col">
 
                   <img className="w-full sm:w-1/2 object-contain" src={FirstPrototype} alt="InitialPrototype" />
@@ -342,9 +291,7 @@ const ChainReactive = () => {
                     <br>
                     </br>
                     <br></br>
-                    This initial design also had some essential components missing.
-                    These were the location selectors where the user would select the location for which he wanted to upload the employee schedule or download the reports.
-
+                    
                   </p>
                 </div>
 
