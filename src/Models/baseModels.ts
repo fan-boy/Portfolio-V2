@@ -5,7 +5,8 @@ export interface Work{
     link:string,
     service:string,
     url:string,
-    description:string
+    description:string,
+    color:string
 }
 
 export interface Graphics{

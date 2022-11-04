@@ -504,7 +504,7 @@ const ChainReactive = () => {
           </div>
         </div>
 
-        <Footer color="purple" showSocials />
+        <Footer white showSocials />
       </div>
     </div>
 

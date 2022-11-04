@@ -21,17 +21,15 @@ const AppRoutes = () =>{
             <Routes>
           <Route path="/about" element={<AboutPage/>}/>
             
-          <Route path="/work" element={<WorkPage/>} />
-
           <Route path="/resume" element={<ResumePage/>} />
 
-          <Route path="/visualart" element={<GraphicPage/>} />
+          <Route path="/fun" element={<GraphicPage/>} />
 
-          <Route path="/work/chainreactive" element = {<ChainReactive/>} />
+          <Route path="/chainreactive" element = {<ChainReactive/>} />
 
-          <Route path="/work/im360" element = {<IM360/>} />
+          <Route path="/im360" element = {<IM360/>} />
 
-          <Route path="/work/hive" element = {<Hive/>} />
+          <Route path="/hive" element = {<Hive/>} />
           
           <Route path="/" element={<HomePage/>}/>
           

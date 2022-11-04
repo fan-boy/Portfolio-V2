@@ -136,7 +136,7 @@ As a part of this project, we wanted to give the consumer more flexibility in te
               { workRenderer}
                 
             </div>
-            <Footer color="purple" showSocials/>
+            <Footer white showSocials/>
          </div>
 
 

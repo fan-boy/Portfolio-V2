@@ -43,24 +43,24 @@ const WorkPage = () =>{
             workDetails.forEach(p => {
                 if(p.id %2 !==0){
                     renderer.push(
-                        <WorkCard class="sm:justify-self-end" title={p.title} service={p.service} imgUrl={p.imageSrc} link={p.link} description = {p.description} onCardClick={onCardClick} url={p.url} />
+                        <WorkCard class="sm:justify-self-end" title={p.title} service={p.service} imgUrl={p.imageSrc} link={p.link} description = {p.description} onCardClick={onCardClick} url={p.url} color={p.color} />
                     )
                 }else{
                     renderer.push(
-                        <WorkCard class="mt-5" title={p.title} service={p.service} imgUrl={p.imageSrc} onCardClick={onCardClick} link={p.link} description = {p.description} url={p.url}/>
+                        <WorkCard class="mt-5" title={p.title} service={p.service} imgUrl={p.imageSrc} onCardClick={onCardClick} link={p.link} description = {p.description} url={p.url} color={p.color}/>
                     )
                 }
             });
             
         }else{
             renderer.push(
-                <WorkCard class="sm:justify-self-end" title={""} service={""} onCardClick={onCardClick} link="" loading description={""} url = {""} />
+                <WorkCard class="sm:justify-self-end" title={""} service={""} onCardClick={onCardClick} link="" loading description={""} url = {""} color={"blue"}/>
             );
             renderer.push(
-                <WorkCard class="mt-5" title={""} service={""} onCardClick={onCardClick} link="" loading description="" url = {""} />
+                <WorkCard class="mt-5" title={""} service={""} onCardClick={onCardClick} link="" loading description="" url = {""} color={"blue"}/>
             );
             renderer.push(
-                <WorkCard class="sm:justify-self-end" title={""} service={""} onCardClick={onCardClick} link="" loading description="" url = {""} />
+                <WorkCard class="sm:justify-self-end" title={""} service={""} onCardClick={onCardClick} link="" loading description="" url = {""} color={"blue"}/>
             );
         }
         setWorkRenderer(renderer);
@@ -77,7 +77,7 @@ const WorkPage = () =>{
               { workRenderer}
                 
             </div>
-            <Footer color="purple" showSocials/>
+            <Footer white showSocials/>
             </div>
          </div>
 

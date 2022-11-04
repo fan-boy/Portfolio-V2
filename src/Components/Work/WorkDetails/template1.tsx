@@ -12,7 +12,7 @@ const Template1 = () =>{
 
 
          
-            <Footer color="purple" showSocials/>
+            <Footer showSocials/>
          </div>
     )
 

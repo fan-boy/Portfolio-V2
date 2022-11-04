@@ -6,13 +6,13 @@ import me from './me.png';
 
 const AboutPage = () =>{
     return(
-        <div className = "w-full min-h-screen p-10 bg-green-200">
+        <div className = "w-full min-h-screen p-10 ">
             <div className="xl:container xl:mx-auto">
             <Navbar selected="about"/>
 
             <div className = "w-full min-h-half pt-5 md:p-10 gap-2 flex flex-col sm:flex-row ">
-                <span className="flex flex-col justify-center text-green-500 w-full items-center min-h-half max-h-screen ">
-                <span className="sm:hidden mt-10 text-4xl self-start font-bold text-green-600">
+                <span className="flex flex-col justify-center w-full items-center min-h-half max-h-screen ">
+                <span className="sm:hidden mt-10 text-4xl self-start font-bold text-blue-400">
                         Hello  👋🏼
                     </span>
                     <p className="sm:hidden mt-10">
@@ -22,23 +22,25 @@ const AboutPage = () =>{
                     I completed my Undergraduate degree in Computer Science in 2018
                     and have been working since.
                     </p>
-                    <img className="sm:w-1/2 h-third object-scale-down" src={me} alt="It Me"/>
-                    <Socials className="flex mt-2 flex-row gap-5 items-center"/>
+                    <span className="sm:w-1/2 mt-2 max-h-min rounded-2xl overflow-hidden">
+                    <img className=" w-full  object-scale-down " src={me} alt="It Me"/>
+                    </span>
+                    <Socials white={false} className="flex mt-2 flex-row gap-5 items-center"/>
                 </span>
-                <span className="w-full min-h-half text-green-500">
-                    <span className="hidden sm:block text-4xl font-bold text-green-600">
+                <span className="w-full min-h-half text-black">
+                    <span className="hidden sm:block text-4xl font-bold text-blue-400">
                         Hello  👋🏼
                     </span>
                     
                     <p className="hidden sm:block mt-10">
 
-                    I’m Aaditya Shete, a <span className="font-semibold">UX Designer and Developer</span> currently pursuing masters in
+                    I’m Aaditya Shete, a <span className="font-semibold">Full-stack Developer and an aspiring Product Designer</span> currently pursuing masters in
                      <span className="font-semibold"> Human Computer Interaction</span> at University of Maryland. 
                     I completed my Undergraduate degree in Computer Science in 2018
                     and have been working since.
                     </p>
                     <p className="mt-10">
-                        <p className="text-3xl  font-semibold text-green-500">
+                        <p className="text-3xl  font-semibold text-black">
                         How did I get here?
                         </p>
                         <p className = "mt-5"> 
@@ -52,7 +54,7 @@ const AboutPage = () =>{
                         
                     </p>
                     <p className="mt-10">
-                        <p className="text-3xl  font-semibold text-green-500">
+                        <p className="text-3xl  font-semibold text-black">
                         When I am not working
                         </p>
                         <p className = "mt-5"> 
@@ -68,7 +70,7 @@ const AboutPage = () =>{
 
                 </span>
             </div>
-            <Footer color="green"/>
+            <Footer />
             </div>
         </div>
     )

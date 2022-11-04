@@ -1,5 +1,7 @@
 import React from "react";
 
+import Chainreactive from "../../Pages/HomepageData/Group 1.png"
+
 interface WorkCardProps{
     class:string,
     title:string,
@@ -9,6 +11,7 @@ interface WorkCardProps{
     description:string
     url:string,
     link:string,
+    color:string,
     onCardClick:(id:string,link?:string) => void;
 }
 
@@ -22,15 +25,15 @@ const WorkCard = (props:WorkCardProps) =>{
     }
     
     return(
-        <span onClick={onClick} className={`w-full  lg:w-workcard relative bg-purple-100 h-100 rounded-lg overflow-hidden ${props.class}`+ (props.loading? ' animate-pulse':'') + (props.url !==""?" cursor-pointer":"")} >
-           {!props.loading && <img className="w-full  h-full object-scale-down" src={props.imgUrl} alt="test"/>}
-           <span className="absolute bottom-3 left-1/10 text-2xl text-purple-500 flex flex-col" >
+        <span onClick={onClick} className={`w-full bg-${props.color}-400 rounded-3xl p-10 rounded-lg overflow-hidden ${props.class}`+ (props.loading? ' animate-pulse': ` hover:bg-${props.color}-600`) + (props.url !==""?" cursor-pointer":"")} >
+           {!props.loading && props.imgUrl && props.imgUrl.length >0 && <img className="w-full h-80 object-scale-down" src={props.imgUrl} alt="test"/>}
+           <span className="font-sans font-bold text-3xl text-gray flex flex-col" >
                 {props.title}
                 
-                <span className=" mt-2 text-base">
+                <span className=" mt-2 font-sans font-medium text-xl">
                     {props.service}
                 </span>
-                <span className=" mt-2 pr-2 text-sm">
+                <span className=" mt-2 pr-2 font-sans font-normal text-lg">
                     {props.description}
                 </span>
 

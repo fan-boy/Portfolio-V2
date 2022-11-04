@@ -29,7 +29,9 @@ module.exports = {
       pink: colors.pink,
       linkedin:'#0e76a8',
       github:'#171515',
-      instagram:'#3b5998'
+      instagram:'#3b5998',
+      herobg:'#FDCA49',
+      herotext:'#FFB800'
     },
     spacing: {
       px: '1px',
@@ -156,6 +158,12 @@ module.exports = {
       xl: '0.75rem',
       '2xl': '1rem',
       '3xl': '1.5rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem', 
+      '6xl': '3.75rem' ,
+      '7xl': '4.5rem',
+      '8xl': '6rem', 
+      '9xl': '8rem', 
       full: '9999px',
     },
     borderWidth: {
@@ -249,6 +257,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'effra',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -264,7 +273,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['big-caslon-fb','ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'ui-monospace',
         'SFMono-Regular',
@@ -290,6 +299,7 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
+      'auto':['20vw']
     },
     fontWeight: {
       thin: '100',
@@ -514,6 +524,7 @@ module.exports = {
       8: '2rem',
       9: '2.25rem',
       10: '2.5rem',
+      'close':'0.8'
     },
     listStyleType: {
       none: 'none',
