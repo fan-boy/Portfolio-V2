@@ -22,8 +22,8 @@ const AboutPage = () =>{
                     I completed my Undergraduate degree in Computer Science in 2018
                     and have been working since.
                     </p>
-                    <span className="sm:w-1/2 mt-2 max-h-min rounded-2xl overflow-hidden">
-                    <img className=" w-full  object-scale-down " src={me} alt="It Me"/>
+                    <span className="sm:w-1/2 mt-2 h-auto rounded-2xl overflow-hidden">
+                    <img className=" w-full object-fit sm:object-scale-down " src={me} alt="It Me"/>
                     </span>
                     <Socials white={false} className="flex mt-2 flex-row gap-5 items-center"/>
                 </span>
