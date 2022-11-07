@@ -4,7 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 interface PanelProps{
     open:boolean,
     onClose:() =>void;
-    children:ReactNode
+    children:ReactNode;
 }
 
 
