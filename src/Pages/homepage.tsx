@@ -150,7 +150,7 @@ const Homepage = () =>{
 
 
             </div>
-        
+            <Footer showSocials />
         </div>
     )
 
