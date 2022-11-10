@@ -122,7 +122,7 @@ const Homepage = () =>{
                         HCIM grad student at University of Maryland, CP
                         </span> 
                         <span className="w-max mt-2 text-xs md:text-base p-2 rounded-lg md:whitespace-nowrap  bg-red-300"> 
-                       Currently looking for Summer 2023 internship.
+                       Currently looking for Summer 2023 internship
                         </span> 
                         </span>
                         </div>
