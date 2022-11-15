@@ -20,11 +20,11 @@ const ResumePage = () =>{
                    Download Resume
                    </a>
                 </span>
-                <span className = " p-3 cursor-pointer text-center bg-blue-400 text-gray-200 hover:shadow-lg rounded-full">
+                {/* <span className = " p-3 cursor-pointer text-center bg-blue-400 text-gray-200 hover:shadow-lg rounded-full">
                <a href = {process.env.PUBLIC_URL + "/Portfolio.pdf"} download="AadityaShete Portfolio" >
                    Download Portfolio
                    </a>
-                </span>
+                </span> */}
                 </span>  
             </div>
             <Footer  showSocials/>
