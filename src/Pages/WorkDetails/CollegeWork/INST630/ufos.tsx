@@ -1,45 +1,20 @@
 import { loadavg } from "os";
 import React, { useEffect, useState } from "react";
-import Footer from "../../../Components/footer";
-import HomePageCard from "../../../Components/HomePage/HomepageCards";
-import Navbar from "../../../Components/Navbar";
-import WorkCard from "../../../Components/Work/WorkCard";
-import { callApiWithToken } from "../../../fetch";
-import { Work } from "../../../Models/baseModels";
-import desktopimg from "./DesktopSiamlewisburg.png";
-import initialPrototyping from "./prototyping.png";
-import surveyImage from "./Stats.png";
-import UpdatedPrototype from "./UpdatedPrototype.png";
-import FinalPrototype from "./finalPrototype.png";
-import HiFIPrototype from "./hiFiPrototype.png";
-import DesktopView from "./DesktopView.gif";
-import MobileView from "./MobileView.gif";
-import designProcess from "./designProcess.png";
+import Footer from "../../../../Components/footer";
+import HomePageCard from "../../../../Components/HomePage/HomepageCards";
+import Navbar from "../../../../Components/Navbar";
+import WorkCard from "../../../../Components/Work/WorkCard";
+import { callApiWithToken } from "../../../../fetch";
+import { Work } from "../../../../Models/baseModels";
 
-const ChainReactive = () => {
+const UFOApp = () => {
   const [cardClicked, setCardClicked] = useState("");
   const [isLoading, setLoading] = useState(false);
   const [workDetails, setWorkDetails] = useState<Work[]>([]);
   const [workRenderer, setWorkRenderer] = useState<JSX.Element[]>([]);
 
-  const getWorkData = async () => {
-    setLoading(true);
-    let workData = await callApiWithToken("", "https://portfolio-20015.firebaseio.com/data/portfolio/projects.json");
-    if (workData.status === 200) {
-      let body: any = workData.body;
-      let workPortfolio: Work[] = body;
-      if (workPortfolio && workPortfolio.length > 0)
-        setWorkDetails(workPortfolio);
-    }
-    setLoading(false);
-  }
-
-  useEffect(() => {
-    (async () => {
-      await getWorkData();
-    })();
-  }, [])
-
+  
+  
   const onCardClick = (id: string) => {
     setCardClicked(id);
   }
@@ -62,7 +37,7 @@ const ChainReactive = () => {
         <div className="w-full relative pt-5 ">
           <div className="flex sm:items-center flex-col  ">
             <p className="text-6xl sm:text-7xl md:text-9xl w-1/2 lg:ml-0 font-bold rounded-md text-white">
-              {`Chain\nReactive\nLLC`}
+              {`Why are hamburgers so yummy? `}
             </p>
             <p className="text-2xl xl:text-5xl w-1/2 lg:ml-0 font-bold text-white">
               {`A restaurant website project`}
@@ -73,7 +48,7 @@ const ChainReactive = () => {
               </p> */}
 
           <div className="my-20">
-            <img className="object-contain" src={desktopimg} alt="HeaderImage" />
+            {/* <img className="object-contain" src={} alt="HeaderImage" /> */}
 
             <div className="flex  flex-col sm:flex-row text-white items-start w-full sm:items-center justify-around my-5">
 
@@ -220,23 +195,14 @@ const ChainReactive = () => {
 
           <div className="my-20">
             <div className="w-full">
-              <p className={"text-3xl xl:text-5xl mt-10 font-bold  text-black text-center"}>
-                {"Order Scheduling"}
-
-              </p>
-              <hr className="border-1 m-5" />
               <p className={headingStyle}>
-                {"Research"}
-
+                {"Order Scheduling"}
               </p>
               <div className={textStyle}>
                 <p className="sm:w-2/3">
                   While developing the product and working with stakeholders, I came across the business and customers need to be able to schedule an order for later.
                   I conducted several interviews with businesses and customers to understand the main issues.
-                  Most of the businesses that we spoke to were restaurants. 
-                  <br/> <br/>
-                  <p>
-                  From the business owner's interviews, I concluded the following-
+                  Most of the businesses that we spoke to were restaurants. From the business owner's interviews, I concluded the following-
 
                   <ul className="p-5 mt-5 list-disc">
                     <li >
@@ -249,7 +215,7 @@ const ChainReactive = () => {
                       Traditionally, they took orders over the phone so they didn’t face this issue as they could inform the consumer about any changes immediately.
                     </li>
                   </ul>
-                  </p>
+
                 </p>
 
                 <p className="mt-5 sm:w-2/3">
@@ -283,15 +249,8 @@ const ChainReactive = () => {
                 <p className="sm:w-2/3">
                   From this, we concluded that the businesses required the consumers to select a pick up time explicitly. <br></br><br></br>
                   This feature was rather crucial as it would affect the menu and prices of the items. It turned out to be more important than we thought.
-                  <br></br> <br/>
-                  From the business perpective it led to the User Story -
                   <br></br>
-                  <br></br>
-                  <span className="italic font-semibold">
-                    As a business owner, I should be able to allow customers to schedule orders for future times and charge them the right price as per the selected time.
-                  </span>
-                  <br></br><br/>
-                  From the customers perpective it led to the User Story -
+                  These led to the User Story -
                   <br></br>
                   <br></br>
                   <span className="italic font-semibold">
@@ -315,7 +274,7 @@ const ChainReactive = () => {
                 {"Initial Prototyping"}
               </p>
               <div className={textStyle + " flex sm:flex-row flex-col"}>
-                <img className="w-full sm:w-1/2 object-contain" src={initialPrototyping} alt="InitialPrototyping" />
+                {/* <img className="w-full sm:w-1/2 object-contain" src={initialPrototyping} alt="InitialPrototyping" /> */}
                 <p className="sm:w-1/2">
                   Our initial design included a day picker followed by a shift (Breakfast,Lunch,Dinner) picker and then a time picker.
                   Once the user made a time selection the menu section of the webpage would be populated. The business owners liked this design of the user having to explicitly select the timing.
@@ -328,11 +287,7 @@ const ChainReactive = () => {
 
               <p className="sm:w-2/3">
                 Although this design satisfied the needs of the business owners, I felt it was not user-friendly from the customer's perspective.
-                So I decided to create a simple google form and survey the customers to understand their perspectives. 
-                <br/>
-                A QR code with this forms 
-                link was kept on the tables in the restaurant and dine-in customers were asked to fill the form.  
-                They were also asked their opinion
+                So I decided to create a simple google form and survey the customers to understand their perspectives. They were also asked their opinion
                 on this design. Some of the questions were as follows-
                 <br></br> <br></br>
                 <ul className="p-5 list-disc">
@@ -360,7 +315,7 @@ const ChainReactive = () => {
                   To no surprise, the results of the survey were as follows-
 
                   <br></br>
-                  <img className="object-contain" src={surveyImage} alt="SurveyImage" />
+                  {/* <img className="object-contain" src={surveyImage} alt="SurveyImage" /> */}
 
                   <br></br>
                   <br></br>
@@ -398,7 +353,7 @@ const ChainReactive = () => {
                     </ul>
 
                   </p>
-                  <img className="w-full sm:w-1/2 object-contain" src={UpdatedPrototype} alt="UpdatedPrototyping" />
+                  {/* <img className="w-full sm:w-1/2 object-contain" src={UpdatedPrototype} alt="UpdatedPrototyping" /> */}
                 </div>
                 <br></br>
                 <p>
@@ -415,7 +370,7 @@ const ChainReactive = () => {
               </p>
               <div className={textStyle}>
 
-                <img className="w-full object-contain" src={HiFIPrototype} alt="HiFiPrototyping" />
+                {/* <img className="w-full object-contain" src={HiFIPrototype} alt="HiFiPrototyping" /> */}
 
               </div>
 
@@ -428,10 +383,10 @@ const ChainReactive = () => {
                 {"Final product"}
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center">
+              {/* <div className="flex flex-col sm:flex-row items-center">
                 <img className="sm:w-2/3 object-contain" src={DesktopView} alt="DesktopView" />
                 <img className="w-2/3 sm:w-1/3 p-5 object-contain" src={MobileView} alt="DesktopView" />
-              </div>
+              </div> */}
 
 
             </div>
@@ -518,4 +473,4 @@ const ChainReactive = () => {
   )
 }
 
-export default ChainReactive;
+export default UFOApp;

@@ -233,7 +233,7 @@ const ChainReactive = () => {
                   <br></br>
                   <br></br>
                   <span className="italic font-semibold">
-                    As an employee,I should be able to see my office schedule and raise ad-hoc officce visit requests while ensuring safety.                </span>
+                    As an employee,I should be able to see my office schedule and raise ad-hoc office visit requests while ensuring safety.                </span>
                   <br></br>
                   <br></br>
                 </p>
