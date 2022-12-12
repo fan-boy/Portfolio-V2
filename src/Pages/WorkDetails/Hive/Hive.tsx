@@ -7,6 +7,7 @@ import WorkCard from "../../../Components/Work/WorkCard";
 import { callApiWithToken } from "../../../fetch";
 import { Work } from "../../../Models/baseModels";
 import AppFlow from "./AppFlow.png";
+import HiveRelationshipDiagram from "./HiveRelationshipDiagram.png";
 import FirstPrototype from "./FirstPrototype.png";
 import GroupInterviews from "./GroupInterviews.png";
 import SecondPrototype from "./SecondPrototype.png";
@@ -127,9 +128,18 @@ const ChainReactive = () => {
                 <p className="sm:w-2/3">
 
 
-                  I along with the team had to come up with a design solution and architect the technical development.
-                  My key roles revolved around the design of the mobile app and the design and development of the desktop app.
+                  <ul className="p-5 list-disc">
+                    <li>
+                      Analyse the complex requirements and ideate and design solutions.
+                    </li>
 
+                    <li>
+                      Develop the product under time constraints in an agile manner.
+                    </li>
+                    <li>
+                      Architect the technical development as I was one of the senior members of the team. 
+                    </li>
+                  </ul>
 
 
                 </p>
@@ -181,7 +191,11 @@ const ChainReactive = () => {
 
               <div className="text-lg xl:text-xl pt-10 smmobile:p-10 rounded-md ">
                 <hr className="border-1 " />
-
+                <p className="m-5">
+                  Some of my work during this stint is under NDA, so
+                    I can showcase only publicly released information.
+                  </p>
+                  <hr className="border-1 " />
               </div>
             </div>
             <div>
@@ -192,16 +206,20 @@ const ChainReactive = () => {
           <div className="my-20">
             <div className="w-full">
               <p className={headingStyle}>
-                {"Gathering Information"}
+                {"Research"}
               </p>
               <div className={textStyle}>
                 <p className="sm:w-2/3">
                   We started by conducting extensive interviews with the BCP and the HR team to get a clear understanding of their requirements.
-                  
+                  </p>
+                  <br/>
+                  <p className="sm:w-2/3">
+                  We also performed interviews on employees who were selected on a random basis to get to know their expectations from this product that 
+                  we were going to build.
 
                   
                 </p>
-
+                <br/>
                 <img className="w-full sm:w-2/3 object-contain" src={GroupInterviews} alt="UpdatedPrototyping" />
                 Conducting online Interviews
               </div>
@@ -253,11 +271,27 @@ const ChainReactive = () => {
               <div className={textStyle + " flex flex-col"}>
 
                 <p className="">
-                  We came up with a three-application design solution.
+                  We mapped out the main requirements from our analysis.
                   <br></br> <br></br>
 
                 </p>
-                <img className="w-full object-contain" src={AppFlow} alt="AppFlow" />
+                <img className="w-full object-contain" src={HiveRelationshipDiagram} alt="AppFlow" />
+                <br/><br/>
+                <p>
+                  We concluded that there was a need of 3 independent apps that worked in sync with each other. These were - 
+                  <ul className="p-5 list-disc">
+                    <li>
+                      A web app for the HR/Admin and BCP teams to upload schedules and send announcements.
+                    </li>
+
+                    <li>
+                      A mobile app for employees to see their schedules and announcements.
+                    </li>
+                    <li>
+                      A mobile app for the security personnel to check-in employees in the office.
+                    </li>
+                  </ul>
+                </p>
               </div>
             </div>
 
@@ -287,7 +321,9 @@ const ChainReactive = () => {
                     <br>
                     </br>
                     <br></br>
-                    After discussion with my team members and their suggestions, I decided to eliminate the tab layout and have a collapsible vertical navbar fixed to the left of the screen.
+                    After discussion with my team members and their suggestions, to come up witha layout that is highly modular so that it 
+                    can address the needs of the future. 
+                     I decided to eliminate the tab layout and have a collapsible vertical navbar fixed to the left of the screen.
                     <br>
                     </br>
                     <br></br>
