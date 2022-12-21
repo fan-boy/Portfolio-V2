@@ -1,5 +1,5 @@
 import { loadavg } from "os";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Footer from "../../../Components/footer";
 import HomePageCard from "../../../Components/HomePage/HomepageCards";
 import Navbar from "../../../Components/Navbar";
@@ -22,6 +22,43 @@ const ChainReactive = () => {
   const [isLoading, setLoading] = useState(false);
   const [workDetails, setWorkDetails] = useState<Work[]>([]);
   const [workRenderer, setWorkRenderer] = useState<JSX.Element[]>([]);
+
+  const overview = useRef<HTMLParagraphElement>(null);
+  const responsibilities = useRef<HTMLParagraphElement>(null);
+  const outcomes = useRef<HTMLParagraphElement>(null);
+  const takeaways = useRef<HTMLParagraphElement>(null);
+  const DesignProcess = useRef<HTMLParagraphElement>(null);
+  const research = useRef<HTMLParagraphElement>(null);
+  const appDesign = useRef<HTMLParagraphElement>(null);
+  const prototyping = useRef<HTMLParagraphElement>(null);
+  const devTesting = useRef<HTMLParagraphElement>(null);
+  const appScreenshots = useRef<HTMLParagraphElement>(null);
+  const result = useRef<HTMLParagraphElement>(null);
+  const [selectedOption,setSelectedOption] = useState("");
+
+  const [verticalNav,setVerticalNav] = useState<JSX.Element>();
+
+  useEffect(() =>{
+
+    let css = `px-3 py-2 cursor-pointer`
+
+    setVerticalNav(
+      <ul className="hidden md:block z-50 z-60 w-1/6 fixed top-1/5 py-5 ml-2  justify-end   bg-white opacity-75 rounded-lg ">
+    <li className={css} onClick={() =>overview.current?.scrollIntoView({ behavior: "smooth" })}>Overview</li>
+    {/* <li className={css} onClick={() =>responsibilities.current?.scrollIntoView({ behavior: "smooth" })}>Responsibilities</li>
+    <li className={css} onClick={() =>outcomes.current?.scrollIntoView({ behavior: "smooth" })}>Outcome</li>
+    <li className={css} onClick={() =>takeaways.current?.scrollIntoView({ behavior: "smooth" })}>Takeaways</li> */}
+    <hr/>
+    <li className={css} onClick={() =>research.current?.scrollIntoView({ behavior: "smooth" })}>Research</li>
+    <li className={css} onClick={() =>appDesign.current?.scrollIntoView({ behavior: "smooth" })}>App Design</li>
+    <li className={css} onClick={() =>prototyping.current?.scrollIntoView({ behavior: "smooth" })}>Prototyping</li>
+     <li className={css} onClick={() =>devTesting.current?.scrollIntoView({ behavior: "smooth" })}>Development</li>
+     <li className={css} onClick={() =>appScreenshots.current?.scrollIntoView({ behavior: "smooth" })}>Final Screens</li>
+    <li className={css} onClick={() =>result.current?.scrollIntoView({ behavior: "smooth" })}>Result</li>
+  </ul>
+    )
+
+  },[selectedOption])
 
 
   const headingStyle = "text-3xl xl:text-5xl mt-10 font-bold  text-black";
@@ -83,8 +120,10 @@ const ChainReactive = () => {
         </div>
       </div>
       <div className="w-full  bg-white rounded-6xl">
-        <div className="container p-10 mx-auto max-w-5xl">
-          <p className={headingStyle}>
+      {verticalNav}
+        <div className="container p-10 mx-auto max-w-4xl">
+        
+          <p className={headingStyle} ref={overview}>
             Overview
           </p>
           <div className={textStyle}>
@@ -152,7 +191,7 @@ const ChainReactive = () => {
           </div>
           <div className="my-20">
             <div className="w-full ">
-              <p className={headingStyle}>
+              <p className={headingStyle} >
                 {"Outcome"}
               </p>
               <div className={textStyle}>
@@ -185,7 +224,7 @@ const ChainReactive = () => {
           <div className="my-20">
             <div className="w-full text-center">
 
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={DesignProcess}>
                 {"Design Process"}
               </p>
 
@@ -205,7 +244,7 @@ const ChainReactive = () => {
 
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={research}>
                 {"Research"}
               </p>
               <div className={textStyle}>
@@ -265,7 +304,7 @@ const ChainReactive = () => {
 
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={appDesign}>
                 {"App Design"}
               </p>
               <div className={textStyle + " flex flex-col"}>
@@ -298,7 +337,7 @@ const ChainReactive = () => {
           </div>
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={prototyping}>
                 {"Initial Prototyping"}
               </p>
               <div className={textStyle}>
@@ -413,7 +452,7 @@ const ChainReactive = () => {
 
           <div className="my-20 ">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={devTesting}>
                 {"Development and testing"}
               </p>
 
@@ -444,7 +483,7 @@ const ChainReactive = () => {
 
           <div className="my-20 ">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={appScreenshots}>
                 {"Employee Mobile App Screenshots"}
               </p>
 
@@ -460,7 +499,7 @@ const ChainReactive = () => {
 
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={result}>
                 Results
               </p>
             </div>

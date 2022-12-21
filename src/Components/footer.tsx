@@ -14,7 +14,7 @@ const Footer = (props:FooterProps) =>{
             {props.showSocials &&
             <span><Socials white={props.white?true:false} className="flex flex-row gap-4 justify-center items-center" /></span>
 }
-    <span className="mt-5">© Oct 2022 • Made with love by Aaditya Shete</span>
+    <span className="mt-5">© Dec 2022 • Made with love by Aaditya Shete</span>
         </span>
     );
 }

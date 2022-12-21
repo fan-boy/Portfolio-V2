@@ -1,11 +1,11 @@
 import { loadavg } from "os";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Footer from "../../../Components/footer";
 import HomePageCard from "../../../Components/HomePage/HomepageCards";
 import Navbar from "../../../Components/Navbar";
 import WorkCard from "../../../Components/Work/WorkCard";
 import { callApiWithToken } from "../../../fetch";
-import { Work } from "../../../Models/baseModels";
+import {  Work } from "../../../Models/baseModels";
 import desktopimg from "./DesktopSiamlewisburg.png";
 import initialPrototyping from "./prototyping.png";
 import surveyImage from "./Stats.png";
@@ -21,6 +21,40 @@ const ChainReactive = () => {
   const [isLoading, setLoading] = useState(false);
   const [workDetails, setWorkDetails] = useState<Work[]>([]);
   const [workRenderer, setWorkRenderer] = useState<JSX.Element[]>([]);
+
+  const overview = useRef<HTMLParagraphElement>(null);
+  const DesignProcess = useRef<HTMLParagraphElement>(null);
+  const research = useRef<HTMLParagraphElement>(null);
+  const prototyping = useRef<HTMLParagraphElement>(null);
+  const iteratingAndFeedback = useRef<HTMLParagraphElement>(null);
+  const finalPrototype = useRef<HTMLParagraphElement>(null);
+  const finalProduct = useRef<HTMLParagraphElement>(null);
+  const result = useRef<HTMLParagraphElement>(null);
+  const [selectedOption,setSelectedOption] = useState("");
+
+  const [verticalNav,setVerticalNav] = useState<JSX.Element>();
+
+  useEffect(() =>{
+
+    let css = `px-3 py-2 cursor-pointer`
+
+    setVerticalNav(
+      <ul className="hidden md:block fixed z-50 z-60  w-1/6 top-1/5 py-5 ml-2  justify-end   bg-white opacity-75 rounded-lg ">
+    <li className={css} onClick={() =>overview.current?.scrollIntoView({ behavior: "smooth" })}>Overview</li>
+    <hr/>
+    {/* <li className={css} onClick={() =>DesignProcess.current?.scrollIntoView({ behavior: "smooth" })}>Design Process</li> */}
+    <li className={css} onClick={() =>research.current?.scrollIntoView({ behavior: "smooth" })}>Research</li>
+    <li className={css} onClick={() =>prototyping.current?.scrollIntoView({ behavior: "smooth" })}>Prototyping</li>
+    <li className={css} onClick={() =>iteratingAndFeedback.current?.scrollIntoView({ behavior: "smooth" })}>Iteration and Feedback</li>
+    <li className={css} onClick={() =>finalPrototype.current?.scrollIntoView({ behavior: "smooth" })}>Final Prototype</li>
+    <li className={css} onClick={() =>finalProduct.current?.scrollIntoView({ behavior: "smooth" })}>Final Product</li>
+    <li className={css} onClick={() =>result.current?.scrollIntoView({ behavior: "smooth" })}>Result</li>
+  </ul>
+    )
+
+  },[selectedOption])
+  
+  
 
   const getWorkData = async () => {
     setLoading(true);
@@ -55,8 +89,9 @@ const ChainReactive = () => {
   const textStyle = "text-lg xl:text-xl mt-10 smmobile:p-5 p-5 -mx-5 text-left sm:p-10 rounded-md ";
 
   return (
-    <div className=" bg-blue-400 w-full pb-10 min-h-screen ">
-      <div className="w-full container  sm:py-10 px-5 py-5 mx-auto max-w-5xl">
+    <div className=" bg-blue-400 w-full pb-10 min-h-screen relative">
+       
+      <div className="w-full container  sm:py-10 px-5 py-5 mx-auto max-w-4xl">
         <Navbar selected="work" white />
 
         <div className="w-full relative pt-5 ">
@@ -109,9 +144,16 @@ const ChainReactive = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  bg-white rounded-6xl ">
-        <div className="container p-10 mx-auto max-w-5xl">
-          <p className={headingStyle}>
+      
+      <div className=" w-full flex flex-row  bg-white rounded-6xl ">
+        
+         
+      {verticalNav}
+      
+      
+        <div className="container p-10 mx-auto max-w-4xl">
+          
+          <p className={headingStyle} ref={overview}>
             Overview
           </p>
           <div className={textStyle}>
@@ -189,7 +231,7 @@ const ChainReactive = () => {
           <div className="my-20">
             <div className="w-full text-center">
 
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={DesignProcess}>
                 {"Design Process"}
               </p>
 
@@ -225,7 +267,7 @@ const ChainReactive = () => {
 
               </p>
               <hr className="border-1 m-5" />
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={research}>
                 {"Research"}
 
               </p>
@@ -311,7 +353,7 @@ const ChainReactive = () => {
 
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={prototyping}>
                 {"Initial Prototyping"}
               </p>
               <div className={textStyle + " flex sm:flex-row flex-col"}>
@@ -352,7 +394,7 @@ const ChainReactive = () => {
           </div>
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={iteratingAndFeedback}>
                 {"Improving"}
               </p>
               <div className={textStyle}>
@@ -410,7 +452,7 @@ const ChainReactive = () => {
           </div>
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={finalPrototype}>
                 {"Final Prototype"}
               </p>
               <div className={textStyle}>
@@ -424,7 +466,7 @@ const ChainReactive = () => {
 
           <div className="my-20 ">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={finalProduct}>
                 {"Final product"}
               </p>
 
@@ -439,7 +481,7 @@ const ChainReactive = () => {
 
           <div className="my-20">
             <div className="w-full">
-              <p className={headingStyle}>
+              <p className={headingStyle} ref={result}>
                 Results
               </p>
             </div>
@@ -490,9 +532,10 @@ const ChainReactive = () => {
 
         </div>
         <div>
-
+      
         
         </div>
+        
       </div>
 
       {/* <div className="my-20">
