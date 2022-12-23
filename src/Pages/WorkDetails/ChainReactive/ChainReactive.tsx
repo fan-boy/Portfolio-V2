@@ -39,7 +39,7 @@ const ChainReactive = () => {
     let css = `px-3 py-2 cursor-pointer`
 
     setVerticalNav(
-      <ul className="hidden md:block fixed z-50 z-60  w-1/6 top-1/5 py-5 ml-2  justify-end   bg-white opacity-75 rounded-lg ">
+      <ul className="hidden md:block fixed z-50 z-60  w-1/6 top-1/5 py-5 ml-2  justify-end   bg-gray-200 opacity-75 rounded-lg ">
     <li className={css} onClick={() =>overview.current?.scrollIntoView({ behavior: "smooth" })}>Overview</li>
     <hr/>
     {/* <li className={css} onClick={() =>DesignProcess.current?.scrollIntoView({ behavior: "smooth" })}>Design Process</li> */}

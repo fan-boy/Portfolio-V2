@@ -16,6 +16,21 @@ import MobileApp from "./MobileApp.png";
 import MobileCalendar from "./MobileCalendar.png";
 import MobileSplash from "./MobileSplash.png";
 import MobileQuestion from "./MobileQuestion.png";
+import Hive1 from "./Hive1.png";
+import Hive2 from "./Hive2.png";
+import Hive3 from "./Hive3.png";
+import Hive4 from "./Hive4.png";
+import Hive5 from "./Hive5.png";
+import Hive6 from "./Hive6.png";
+import Hive7 from "./Hive7.png";
+import Hive8 from "./Hive8.png";
+import Hive9 from "./Hive9.png";
+import Hive10 from "./Hive10.png";
+import Hive11 from "./Hive11.png";
+import Hive12 from "./Hive12.png";
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const ChainReactive = () => {
   const [cardClicked, setCardClicked] = useState("");
@@ -38,12 +53,32 @@ const ChainReactive = () => {
 
   const [verticalNav,setVerticalNav] = useState<JSX.Element>();
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
   useEffect(() =>{
 
     let css = `px-3 py-2 cursor-pointer`
 
     setVerticalNav(
-      <ul className="hidden md:block z-50 z-60 w-1/6 fixed top-1/5 py-5 ml-2  justify-end   bg-white opacity-75 rounded-lg ">
+      <ul className="hidden md:block z-50 z-60 w-1/6 fixed top-1/5 py-5 ml-2  justify-end   bg-gray-200 opacity-75 rounded-lg ">
     <li className={css} onClick={() =>overview.current?.scrollIntoView({ behavior: "smooth" })}>Overview</li>
     {/* <li className={css} onClick={() =>responsibilities.current?.scrollIntoView({ behavior: "smooth" })}>Responsibilities</li>
     <li className={css} onClick={() =>outcomes.current?.scrollIntoView({ behavior: "smooth" })}>Outcome</li>
@@ -66,7 +101,7 @@ const ChainReactive = () => {
 
   return (
     <div className="bg-blue-400 w-full pb-10  min-h-screen">
-      <div className="w-full container  sm:py-10 py-5 px-5 mx-auto max-w-5xl">
+      <div className="w-full container  sm:py-10 py-5 px-5 mx-auto max-w-4xl">
         <Navbar white selected="work" />
         <div className="w-full relative pt-5 ">
           <div className="flex sm:items-center flex-col  ">
@@ -487,12 +522,30 @@ const ChainReactive = () => {
                 {"Employee Mobile App Screenshots"}
               </p>
 
-              <div className="flex w-full flex-col sm:flex-row items-center">
-                <img className="w-full sm:w-1/3 object-contain" src={MobileSplash} alt="Splash" />
-                <img className="w-full sm:w-1/3 object-contain" src={MobileQuestion} alt="Question" />
-                <img className="w-full sm:w-1/3 object-contain" src={MobileCalendar} alt="Question" />
-              </div>
-
+            <Carousel responsive={responsive}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={3000}
+  keyBoardControl={true}
+  slidesToSlide={1}
+  removeArrowOnDeviceType={["tablet", "mobile"]}
+  containerClass="h-1/2"
+  partialVisbile={false}
+            >
+              
+                <img className="w-full p-3  object-contain" src={Hive1} alt="Splash" />
+                <img className="w-full p-3   object-contain" src={Hive2} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive3} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive4} alt="Main" />
+                <img className="w-full p-3  object-contain" src={Hive5} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive6} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive7} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive8} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive9} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive10} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive11} alt="Question" />
+                <img className="w-full p-3  object-contain" src={Hive12} alt="Question" />
+              </Carousel>
 
             </div>
           </div>
