@@ -165,7 +165,7 @@ const Hive = () => {
             <p className="sm:w-2/3">
               After the COVID - 19 pandemic when offices started reopening, the business continuity planning (BCP) team at
               Ingram Micro India gathered a team of 5 people and provided us with a problem statement.
-              They wanted an app to enable a safe work environment to return to work.
+              They wanted an <span className="font-semibold"> app to enable a safe work environment to return to work</span>.
             </p>
             <p className="mt-5 sm:w-2/3">
               Ingram Micro India has about 3000 employees all over and we had
@@ -208,7 +208,7 @@ const Hive = () => {
                     </li>
 
                     <li>
-                      Develop the product under time constraints in an agile manner.
+                      Develop the <span className="font-semibold">product under time constraints in an agile manner</span>.
                     </li>
                     <li>
                       Architect the technical development as I was one of the senior members of the team. 
@@ -247,7 +247,7 @@ const Hive = () => {
               </p>
               <div className={textStyle}>
                 <p className="sm:w-2/3">
-                  Working on  tight deadline and developing an enterprise scale application taught me how to work in high pressure environments and how to design enterprise applications from scratch.
+                  Working on tight deadline and developing an enterprise scale application taught me how to work in high pressure environments and how to design enterprise applications from scratch.
                 </p>
 
               </div>
@@ -284,7 +284,7 @@ const Hive = () => {
               </p>
               <div className={textStyle}>
                 <p className="sm:w-2/3">
-                  We started by conducting extensive interviews with the BCP and the HR team to get a clear understanding of their requirements.
+                  We started by <span className="font-semibold">conducting extensive interviews</span> with the BCP and the HR team to get a clear understanding of their requirements.
                   </p>
                   <br/>
                   <p className="sm:w-2/3">
@@ -352,7 +352,7 @@ const Hive = () => {
                 <img className="w-full object-contain" src={HiveRelationshipDiagram} alt="AppFlow" />
                 <br/><br/>
                 <p>
-                  We concluded that there was a need of 3 independent apps that worked in sync with each other. These were - 
+                  We concluded that there was a need of <span className="font-semibold">3 independent apps</span> that worked in sync with each other. These were - 
                   <ul className="p-5 list-disc">
                     <li>
                       A web app for the HR/Admin and BCP teams to upload schedules and send announcements.

@@ -158,8 +158,8 @@ const ChainReactive = () => {
           </p>
           <div className={textStyle}>
             <p className="sm:w-2/3">
-              My aim was to create a responsive website that would provide a
-              comprehensive experience for users looking to order online from local businesses.
+              My aim was to create a <span className="font-semibold">responsive website that would provide a
+              comprehensive experience for users looking to order online from local businesses.</span>
               I did this by constantly being in touch with the stakeholders and involving them in the design process.
             </p>
             <p className="mt-5 sm:w-2/3">
@@ -176,11 +176,11 @@ const ChainReactive = () => {
                 <p className="sm:w-2/3">
                   <ul className="p-5 list-disc">
                     <li>
-                      As the product design lead, I led the design vision and helped set the product direction.
+                      As the product design lead, I led the <span className="font-semibold">design vision and helped set the product direction.</span>
                     </li>
 
                     <li>
-                      Conducted participatory design sessions to help users and stakeholders express their needs.
+                      Conducted <span className="font-semibold">participatory design </span> sessions to help users and stakeholders express their needs.
                     </li>
                     <li>
                       Ideated solutions, prototyped them and performed user acceptance testing.
@@ -273,8 +273,8 @@ const ChainReactive = () => {
               </p>
               <div className={textStyle}>
                 <p className="sm:w-2/3">
-                  While developing the product and working with stakeholders, I came across the business and customers need to be able to schedule an order for later.
-                  I conducted several interviews with businesses and customers to understand the main issues.
+                  While developing the product and working with stakeholders, I came across the business and customers need to be able to <span className="font-semibold">schedule an order for later</span>.
+                  I conducted several <span className="font-semibold">interviews with businesses and customers</span> to understand the main issues.
                   Most of the businesses that we spoke to were restaurants. 
                   <br/> <br/>
                   <p>
@@ -360,7 +360,7 @@ const ChainReactive = () => {
                 <img className="w-full sm:w-1/2 object-contain" src={initialPrototyping} alt="InitialPrototyping" />
                 <p className="sm:w-1/2">
                   Our initial design included a day picker followed by a shift (Breakfast,Lunch,Dinner) picker and then a time picker.
-                  Once the user made a time selection the menu section of the webpage would be populated. The business owners liked this design of the user having to explicitly select the timing.
+                  Once the user made a time selection the menu section of the webpage would be populated. The <span className="font-semibold">business owners liked this design </span> of the user having to explicitly select the timing.
 
                 </p>
 
@@ -369,8 +369,8 @@ const ChainReactive = () => {
             <div className={textStyle}>
 
               <p className="sm:w-2/3">
-                Although this design satisfied the needs of the business owners, I felt it was not user-friendly from the customer's perspective.
-                So I decided to create a simple google form and survey the customers to understand their perspectives. 
+                Although this design satisfied the needs of the business owners, <span className="font-semibold">I felt it was not user-friendly from the customer's perspective.</span>
+                So I decided to create a simple google form and <span className="font-semibold">survey the customers</span> to understand their perspectives. 
                 <br/>
                 A QR code with this forms 
                 link was kept on the tables in the restaurant and dine-in customers were asked to fill the form.  
@@ -387,7 +387,7 @@ const ChainReactive = () => {
 
                 </ul>
                 <br></br>
-                43 people answered this survey.
+                <span className="font-semibold">43 people </span>answered this survey.
               </p>
 
             </div>
@@ -407,7 +407,7 @@ const ChainReactive = () => {
                   <br></br>
                   <br></br>
                   <span>
-                    From this, it was pretty clear that even though the feature was an important one from the perspective of the business owners, it was just a good to have feature from the perspective of the consumers as the consumers mostly placed orders for asap delivery/pickup.
+                    From this, it was pretty clear that even though the <span className="font-semibold">feature was an important one from the perspective of the business owners, it was just a good to have feature from the perspective of the consumers</span> as the consumers mostly placed orders for asap delivery/pickup.
                   </span>
                   <br></br>
                   This discovery led to new and better prototypes.
@@ -430,7 +430,7 @@ const ChainReactive = () => {
                     <br>
                     </br>
                     <br></br>
-                    However, this prototype was rejected during testing by the consumers. From their feedback, I concluded that -
+                    However, this prototype was <span className="font-semibold">rejected during testing by the consumers</span>. From their feedback, I concluded that -
                     <ul className="list-disc p-5">
                       <li>
                         They felt that the time picker section that appeared once the user clicked on "Today" or "Later" was overwhelming when it appeared on the screen. It needed to be moved to a separate component.
@@ -508,7 +508,7 @@ const ChainReactive = () => {
                   During this process, I learnt that it’s essential to consider the requirements of all
                   your user groups and develop a design that works for them.
                   Each user group might have different roles and perform various actions.
-                  Making no assumptions and adhering to the design process will yield results that satisfy the needs of all stakeholders.
+                  <span className="font-semibold"> Making no assumptions and adhering to the design process will yield results that satisfy the needs of all stakeholders.</span>
                 </p>
 
               </div>
