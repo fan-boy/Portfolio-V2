@@ -32,7 +32,7 @@ import Hive12 from "./Hive12.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-const ChainReactive = () => {
+const Hive = () => {
   const [cardClicked, setCardClicked] = useState("");
   const [isLoading, setLoading] = useState(false);
   const [workDetails, setWorkDetails] = useState<Work[]>([]);
@@ -626,4 +626,4 @@ const ChainReactive = () => {
   )
 }
 
-export default ChainReactive;
+export default Hive;
