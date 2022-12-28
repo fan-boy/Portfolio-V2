@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Navigate, useLocation } from "react-router-dom";
+import trackPathForAnalytics from "../TrackPageForAnalytics";
 import Socials from "./AboutPage/Socials";
 import Panel from "./Panel/panel";
 
@@ -19,6 +20,17 @@ const Navbar = (props: NavbarProps) => {
     let icon = "";
     let color = props.white ? "text-white" : "text-blue-400";
     let navBarHoverColor = "text-blue-600";
+
+    const { pathname, search } = useLocation();
+
+    const analytics = useCallback(() => {
+        trackPathForAnalytics({ path: pathname, search: search, title: pathname.split("/")[1] });
+    }, [pathname, search]);
+	
+    useEffect(() => {
+        analytics();
+    }, [analytics]);
+    
     useEffect(() => {
         if (location.pathname.split("/")[2]) {
             setSecondRoute(location.pathname.split("/")[2])

@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useCallback, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "../Pages/homepage";
 import AboutPage from "../Pages/about";
 import WorkPage from "../Pages/work";
@@ -10,9 +10,11 @@ import ChainReactive from "../Pages/WorkDetails/ChainReactive/ChainReactive";
 import IM360 from "../Pages/WorkDetails/IM360";
 import Hive from "../Pages/WorkDetails/Hive/Hive";
 import HealSpace from "../Pages/WorkDetails/CollegeWork/INST711/HealSpace";
+import trackPathForAnalytics from "../TrackPageForAnalytics";
 
 
 const AppRoutes = () =>{
+    
 
 
     return(
