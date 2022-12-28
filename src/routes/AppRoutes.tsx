@@ -9,6 +9,7 @@ import WorkDetailsPage from "../Pages/workDetails";
 import ChainReactive from "../Pages/WorkDetails/ChainReactive/ChainReactive";
 import IM360 from "../Pages/WorkDetails/IM360";
 import Hive from "../Pages/WorkDetails/Hive/Hive";
+import HealSpace from "../Pages/WorkDetails/CollegeWork/INST711/HealSpace";
 
 
 const AppRoutes = () =>{
@@ -31,7 +32,10 @@ const AppRoutes = () =>{
 
           <Route path="/hive" element = {<Hive/>} />
           
+          <Route path = "/healspace" element = {<HealSpace />}/>
+
           <Route path="/" element={<HomePage/>}/>
+          
           
           
         </Routes>

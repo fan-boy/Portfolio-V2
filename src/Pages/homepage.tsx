@@ -134,11 +134,13 @@ const Homepage = () =>{
                             <span className="w-full sm: px-10 text-center text-3xl font-bold">
                                 Work
                             </span>
-                            <span className = "sm:mx-5 sm:p-5 rounded-2xl text-white md:grid md:grid-cols-2 gap-8 loading flex flex-col">
+                           
+                        </div>
+                        </div>
+                        <span className = "sm:mx-5 sm:p-5 rounded-2xl text-white md:flex md:grid md:grid-cols-3 justify-center gap-8 loading flex flex-col">
                                 {workRenderer}
                             </span>
-                        </div>
-
+                            <div className="w-full  container mx-auto max-w-5xl h-full">
                         <div className= "w-full font-sans  my-10  text-gray-800 ">
                             <span className="w-full sm:px-10 text-center text-3xl font-bold">
                                 Other Work and Some Fun
@@ -147,9 +149,9 @@ const Homepage = () =>{
                                 {otherWorkRenderer}
                             </span>
                         </div>
+                        </div>
 
-
-            </div>
+           
             <Footer showSocials />
         </div>
     )

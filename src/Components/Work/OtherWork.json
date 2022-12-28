@@ -10,34 +10,33 @@
         "color":"blue"
     },
     {
-        "description": "Designed and developed customizations on a CRM tool",
+        "description": "Designed an aliens diary to explain why they abduct cows.",
         "id": 2,
         "imageSrc": "",
-        "service": "Ingram Micro",
-        "title": "IM360",
+        "service": "INST630 coursework",
+        "title": "UFO conspiracy",
         "link": "",
-        "url": "",
-        "color":"blue"
-    },
-    
-    {
-        "description": "Designed and developed portfolio websites for clients and small businesses",
-        "id": 3,
-        "imageSrc": "",
-        "service": "",
-        "title": "Portfolio Websites",
-        "link": "",
-        "url": "",
+        "url": "https://amit1031996.github.io/test-react-app/",
         "color":"blue"
     },
     {
         "description": "Just me,playing around with some code.",
-        "id": 4,
+        "id": 3,
         "imageSrc": "",
         "service": "Make your own burger!",
         "title": "Burger Builder",
         "link": "",
         "url": "https://burgerbuilder-758b0.web.app/",
+        "color":"blue"
+    },
+    {
+        "description": "Link to my old portfolio",
+        "id": 4,
+        "imageSrc": "",
+        "service": "Designed and developed portfolio websites for clients and small businesses",
+        "title": "Portfolio Websites",
+        "link": "",
+        "url": "https://portfolio-20015.web.app",
         "color":"blue"
     }
 ]

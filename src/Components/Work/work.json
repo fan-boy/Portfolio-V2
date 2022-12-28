@@ -18,5 +18,15 @@
         "link":"hive",
         "url": "https://play.google.com/store/apps/details?id=com.im.im_hr",
         "color":"blue"
+    },
+    {
+        "description": "Designing Interactions for INST711 coursework",
+        "id": 3,
+        "imageSrc": "https://drive.google.com/uc?export=view&id=1cyya0sIDTG6sqkrWX0FmRIfWl-yb3FCu",
+        "service": "A speculative healthcare app ",
+        "title": "HealSpace",
+        "link":"healspace",
+        "url": "healspace",
+        "color":"blue"
     }
 ]
