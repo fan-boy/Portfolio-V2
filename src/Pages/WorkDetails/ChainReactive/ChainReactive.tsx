@@ -14,6 +14,7 @@ import FinalPrototype from "./finalPrototype.png";
 import HiFIPrototype from "./hiFiPrototype.png";
 import DesktopView from "./DesktopView.gif";
 import MobileView from "./MobileView.gif";
+import EditMode from "./EditMode.gif";
 import designProcess from "./designProcess.png";
 
 const ChainReactive = () => {
@@ -86,7 +87,7 @@ const ChainReactive = () => {
   }, [workDetails, isLoading])
 
   const headingStyle = "text-3xl xl:text-5xl mt-10 font-bold  text-black";
-  const textStyle = "text-lg xl:text-xl mt-10 smmobile:p-5 p-5 -mx-5 text-left sm:p-10 rounded-md ";
+  const textStyle = "text-lg xl:text-xl mt-10 smmobile:p-5 p-5 -mx-5 text-justify sm:p-10 rounded-md ";
 
   return (
     <div className=" bg-blue-400 w-full pb-10 min-h-screen relative">
@@ -157,23 +158,25 @@ const ChainReactive = () => {
             Overview
           </p>
           <div className={textStyle}>
-            <p className="sm:w-2/3">
-              My aim was to create a <span className="font-semibold">responsive website that would provide a
-              comprehensive experience for users looking to order online from local businesses.</span>
-              I did this by constantly being in touch with the stakeholders and involving them in the design process.
+            <p className="sm:w-4/5">
+            <span className="font-semibold">Community development and upbringing</span> are a big part of rural United States Culture. 
+            With this product, our aim was to <span className="font-semibold">support</span> the development of <span className="font-semibold">local businesses and small mom-pop 
+            restaurants</span> in rural areas starting with the town of <span className="font-semibold">Lewisburg</span> while 
+            <span className="font-semibold"> furthering the existing POS system</span> (an existing product of the company). 
+              
             </p>
-            <p className="mt-5 sm:w-2/3">
-              As a part of this project, we wanted to give the customers more flexibility in order delivery or pick-up times,
-              as the business owners felt this would be an essential feature.
+            <p className="mt-5 sm:w-4/5">
+            With the general lack or lack of efficiency of apps like Doordash and Grubhub in rural areas, 
+            my <span className="font-semibold">aim was to provide businesses and customers with a seamless and highly flexible online ordering experience</span>. 
             </p>
           </div>
           <div className="my-20">
             <div className="w-full">
               <p className={headingStyle}>
-                {"Responsibilities & Contribution"}
+                {"Role"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
+                <p className="sm:w-4/5">
                   <ul className="p-5 list-disc">
                     <li>
                       As the product design lead, I led the <span className="font-semibold">design vision and helped set the product direction.</span>
@@ -183,7 +186,7 @@ const ChainReactive = () => {
                       Conducted <span className="font-semibold">participatory design </span> sessions to help users and stakeholders express their needs.
                     </li>
                     <li>
-                      Ideated solutions, prototyped them and performed user acceptance testing.
+                      Designed and developed the product from scratch. Took it from <span className="font-semibold">0 to 1</span>.
                     </li>
                   </ul>
                 </p>
@@ -200,9 +203,10 @@ const ChainReactive = () => {
                 {"Outcome"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
-                  I designed and implemented a website template that small mom-and-pop businesses could use to add online ordering.
-                  We implemented this in one of the local restaurants and increased the take-out revenue by <span className="font-semibold">60%</span>.
+                <p className="sm:w-4/5">
+                I designed and implemented a <span className="font-semibold">highly dynamic platform</span> where businesses could be <span className="font-semibold">onboarded easily 
+                and add their catalogues</span> to it. Using this platform any business could add online ordering to their belt.
+                We implemented this in one of the local mom and pop restaurant in Lewisburg and it added a major chunk of revenue.It increased take out revenue by <span className="font-semibold">60%</span>.
                 </p>
 
               </div>
@@ -217,7 +221,7 @@ const ChainReactive = () => {
                 {"Takeaways"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
+                <p className="sm:w-4/5">
                   Closely working with early-mid stage startups across different domains helped me
                   understand the balance they strive to achieve between their user base and the business.
                 </p>
@@ -227,6 +231,8 @@ const ChainReactive = () => {
             <div>
 
             </div>
+
+            
           </div>
           <div className="my-20">
             <div className="w-full text-center">
@@ -234,6 +240,8 @@ const ChainReactive = () => {
               <p className={headingStyle} ref={DesignProcess}>
                 {"Design Process"}
               </p>
+
+              
 
               <div className="text-lg xl:text-xl pt-10 smmobile:p-10 rounded-md ">
                 <hr className="border-1 " />
@@ -251,7 +259,7 @@ const ChainReactive = () => {
             <div className="w-full justify-items-center">
               {/* <div className={" smmobile:p-5 p-5 -mx-5 sm:p-10 rounded-md text-purple-500"} >
                 <div className="w-full flex text-center justify-center">
-                  <img className="sm:w-2/3 object-contain" src={designProcess} alt="DesignProcess" />
+                  <img className="sm:w-4/5 object-contain" src={designProcess} alt="DesignProcess" />
                 </div>
               </div> */}
             </div>
@@ -272,10 +280,9 @@ const ChainReactive = () => {
 
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
-                  While developing the product and working with stakeholders, I came across the business and customers need to be able to <span className="font-semibold">schedule an order for later</span>.
-                  I conducted several <span className="font-semibold">interviews with businesses and customers</span> to understand the main issues.
-                  Most of the businesses that we spoke to were restaurants. 
+                <p className="sm:w-4/5">
+                  I came across the business and customers need to be able to <span className="font-semibold">schedule an order for later</span>.
+                  I conducted several <span className="font-semibold">one on one online interviews with businesses and customers</span> to understand their requirements.
                   <br/> <br/>
                   <p>
                   From the business owner's interviews, I concluded the following-
@@ -294,7 +301,7 @@ const ChainReactive = () => {
                   </p>
                 </p>
 
-                <p className="mt-5 sm:w-2/3">
+                <p className="mt-5 sm:w-4/5">
                   From customers interviews, I concluded that -
                   <ul className="list-disc p-5">
                     <li >
@@ -322,10 +329,8 @@ const ChainReactive = () => {
                 {"Defining the problem statement"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
-                  From this, we concluded that the businesses required the consumers to select a pick up time explicitly. <br></br><br></br>
-                  This feature was rather crucial as it would affect the menu and prices of the items. It turned out to be more important than we thought.
-                  <br></br> <br/>
+                <p className="sm:w-4/5">
+                  
                   From the business perpective it led to the User Story -
                   <br></br>
                   <br></br>
@@ -341,8 +346,7 @@ const ChainReactive = () => {
                   </span>
                   <br></br>
                   <br></br>
-                  Based on this, we started prototyping solutions and conducting tests with stakeholders.
-                </p>
+                  </p>
 
               </div>
             </div>
@@ -368,7 +372,7 @@ const ChainReactive = () => {
             </div>
             <div className={textStyle}>
 
-              <p className="sm:w-2/3">
+              <p className="sm:w-4/5">
                 Although this design satisfied the needs of the business owners, <span className="font-semibold">I felt it was not user-friendly from the customer's perspective.</span>
                 So I decided to create a simple google form and <span className="font-semibold">survey the customers</span> to understand their perspectives. 
                 <br/>
@@ -426,11 +430,11 @@ const ChainReactive = () => {
               <div className={textStyle}>
                 <div className="flex sm:flex-row flex-col">
                   <p className="sm:w-1/2">
-                    I then came up with this design prototype where ASAP delivery was selected by default, and only if the user wanted to order for a future time, he had to make a change to it. The time picker and shift picker (Breakfast, Lunch and Dinner) were hidden when ASAP was selected and only showed up when Today or Later was selected.
+                    Next iteration where ASAP delivery was selected by default, and only if the user wanted to order for a future time, he had to make a change to it. The time picker and shift picker (Breakfast, Lunch and Dinner) were hidden when ASAP was selected and only showed up when Today or Later was selected.
                     <br>
                     </br>
                     <br></br>
-                    However, this prototype was <span className="font-semibold">rejected during testing by the consumers</span>. From their feedback, I concluded that -
+                    From feedback on this iteration, I concluded that - 
                     <ul className="list-disc p-5">
                       <li>
                         They felt that the time picker section that appeared once the user clicked on "Today" or "Later" was overwhelming when it appeared on the screen. It needed to be moved to a separate component.
@@ -443,9 +447,6 @@ const ChainReactive = () => {
                   <img className="w-full sm:w-1/2 object-contain" src={UpdatedPrototype} alt="UpdatedPrototyping" />
                 </div>
                 <br></br>
-                <p>
-                  This led to a new prototype.
-                </p>
               </div>
 
             </div>
@@ -471,8 +472,8 @@ const ChainReactive = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center">
-                <img className="sm:w-2/3 object-contain" src={DesktopView} alt="DesktopView" />
-                <img className="w-2/3 sm:w-1/3 p-5 object-contain" src={MobileView} alt="DesktopView" />
+                <img className="sm:w-4/5 object-contain" src={DesktopView} alt="DesktopView" />
+                <img className="w-2/3 sm:w-1/3 p-5 object-contain" src={MobileView} alt="MobileView" />
               </div>
 
 
@@ -486,7 +487,7 @@ const ChainReactive = () => {
               </p>
             </div>
             <div className={textStyle}>
-              <div className="sm:w-2/3">
+              <div className="sm:w-4/5">
 
                 <p>
                   We were able to come up with a design that satisfied the needs of the business owners while also keeping the complexity to a minimum for the consumers.
@@ -515,7 +516,22 @@ const ChainReactive = () => {
 
             </div>
           </div>
+          <p className={"text-3xl xl:text-5xl mt-10 font-bold  text-black text-center"}>
+                {"Theming - Another crucial design desicion"} 
 
+              </p>
+              <div className={textStyle}>
+                <p>
+                  Since it was a platform where multiple business which <span className="font-semibold">already have their brand themes set</span> could be onboarded, it was important to provide the
+                  businesses with the <span className="font-semibold">ability to theme their page</span>.
+
+                </p>
+                <p>
+                  Business owners can theme their page just like a <span className="font-semibold">WYSIWYG </span>editor in the edit mode. 
+                </p>
+
+                <img className=" p-5 object-contain" src={EditMode} alt="Edit Mode available only to business owners" />
+              </div>
 
           <div className="my-10">
             <div className={textStyle}>

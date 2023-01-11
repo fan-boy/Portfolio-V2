@@ -97,7 +97,7 @@ const Hive = () => {
 
 
   const headingStyle = "text-3xl xl:text-5xl mt-10 font-bold  text-black";
-  const textStyle = "text-lg xl:text-xl mt-10 smmobile:p-5 p-5 -mx-5 text-left sm:p-10 rounded-md ";
+  const textStyle = "text-lg xl:text-xl mt-10 smmobile:p-5 p-5 -mx-5 text-left sm:p-10 rounded-md text-justify ";
 
   return (
     <div className="bg-blue-400 w-full pb-10  min-h-screen">
@@ -162,17 +162,17 @@ const Hive = () => {
             Overview
           </p>
           <div className={textStyle}>
-            <p className="sm:w-2/3">
+            <p className="sm:w-4/5">
               After the COVID - 19 pandemic when offices started reopening, the business continuity planning (BCP) team at
               Ingram Micro India gathered a team of 5 people and provided us with a problem statement.
               They wanted an <span className="font-semibold"> app to enable a safe work environment to return to work</span>.
             </p>
-            <p className="mt-5 sm:w-2/3">
+            <p className="mt-5 sm:w-4/5">
               Ingram Micro India has about 3000 employees all over and we had
               to come up with a way to ensure a safe return to work for them. This was particularly challenging because we
               were working on a tight deadline. We had to come up with a plan, design, implement and test a product all within 4 months.
             </p>
-            <p className="mt-5 sm:w-2/3">
+            <p className="mt-5 sm:w-4/5">
               Due to the time constraints all 5 of us were acting as designers and developers, however we had a UI specialist within the team.
 
             </p>
@@ -199,7 +199,7 @@ const Hive = () => {
                 {"Responsibilities & Contribution"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
+                <p className="sm:w-4/5">
 
 
                   <ul className="p-5 list-disc">
@@ -230,7 +230,7 @@ const Hive = () => {
                 {"Outcome"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
+                <p className="sm:w-4/5">
                   We designed and implemented an app that ensured a safe return to work environment for the employees.
                 </p>
 
@@ -246,7 +246,7 @@ const Hive = () => {
                 {"Takeaways"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
+                <p className="sm:w-4/5">
                   Working on tight deadline and developing an enterprise scale application taught me how to work in high pressure environments and how to design enterprise applications from scratch.
                 </p>
 
@@ -283,18 +283,18 @@ const Hive = () => {
                 {"Research"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
+                <p className="sm:w-4/5">
                   We started by <span className="font-semibold">conducting extensive interviews</span> with the BCP and the HR team to get a clear understanding of their requirements.
                   </p>
                   <br/>
-                  <p className="sm:w-2/3">
+                  <p className="sm:w-4/5">
                   We also performed interviews on employees who were selected on a random basis to get to know their expectations from this product that 
                   we were going to build.
 
                   
                 </p>
                 <br/>
-                <img className="w-full sm:w-2/3 object-contain" src={GroupInterviews} alt="UpdatedPrototyping" />
+                <img className="w-full sm:w-4/5 object-contain" src={GroupInterviews} alt="UpdatedPrototyping" />
                 Conducting online Interviews
               </div>
             </div>
@@ -309,7 +309,7 @@ const Hive = () => {
                 {"Defining the problem statement"}
               </p>
               <div className={textStyle}>
-                <p className="sm:w-2/3">
+                <p className="sm:w-4/5">
                 We concluded that there was a need of more than one app. There was one that the BCP and the HR teams will use and one for the employees. <br></br><br></br>
 
                   <br></br>
@@ -494,7 +494,7 @@ const Hive = () => {
               <div className={textStyle}>
                 <div className="flex sm:flex-row flex-col">
                   {/* <img className="w-full sm:w-1/2 object-contain" src={FinalPrototype} alt="UpdatedPrototyping" /> */}
-                  <p className="sm:w-2/3">
+                  <p className="sm:w-4/5">
                     As soon as we got the basic prototypes approved by the users we started with the development of the app and the website.
 
 
@@ -557,7 +557,7 @@ const Hive = () => {
               </p>
             </div>
             <div className={textStyle}>
-              <div className="sm:w-2/3">
+              <div className="sm:w-4/5">
 
                 <p>
                   We came up with a design successfully in a very short time span. This not only ensured that all the requirements of the stakeholders and employees were met but also the safety of the return to work process.

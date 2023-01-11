@@ -80,7 +80,7 @@ const HealSpace = () => {
     }, [selectedOption])
 
     const headingStyle = "text-3xl xl:text-5xl mt-10 font-bold  text-black";
-    const textStyle = "text-lg xl:text-xl mt-10 smmobile:p-5 p-5 -mx-5 text-left sm:p-10 rounded-md ";
+    const textStyle = "text-lg xl:text-xl mt-10 smmobile:p-5 p-5 -mx-5 text-left sm:p-10 rounded-md text-justify ";
 
     return (
         <div className=" bg-blue-400 w-full pb-10 min-h-screen relative">
@@ -151,7 +151,7 @@ const HealSpace = () => {
                         Overview
                     </p>
                     <div className={textStyle}>
-                        <p className="sm:w-2/3">
+                        <p className="sm:w-4/5">
                             As a part of the coursework for INST711, we were supposed to create an app based on 4 randomly generated keywords.
                             As groups of 4, we then had to show how a person would use our apps in a day in his life.
                             We as a group took the speculative approach and designed a user journey through our apps on the moon, a millennial in the future.
@@ -163,7 +163,7 @@ const HealSpace = () => {
                                 {"Responsibilities & Contribution"}
                             </p>
                             <div className={textStyle}>
-                                <p className="sm:w-2/3">
+                                <p className="sm:w-4/5">
                                     <ul className="p-5 list-disc">
                                         <li>
                                             Come up with user personas.
@@ -193,7 +193,7 @@ const HealSpace = () => {
                                 {"Outcome"}
                             </p>
                             <div className={textStyle}>
-                                <p className="sm:w-2/3">
+                                <p className="sm:w-4/5">
                                     We made a video showing a user's usage of our apps as they went through their day.
                                 </p>
 
@@ -209,7 +209,7 @@ const HealSpace = () => {
                                 {"Takeaways"}
                             </p>
                             <div className={textStyle}>
-                                <p className="sm:w-2/3">
+                                <p className="sm:w-4/5">
                                     Learnt how to design interactions that resonate with the audience:: how the features and functions
                                     of a project get translated into something people find usable, useful, and desirable.
                                 </p>
@@ -240,7 +240,7 @@ const HealSpace = () => {
                         <div className="w-full justify-items-center">
                             {/* <div className={" smmobile:p-5 p-5 -mx-5 sm:p-10 rounded-md text-purple-500"} >
                 <div className="w-full flex text-center justify-center">
-                  <img className="sm:w-2/3 object-contain" src={designProcess} alt="DesignProcess" />
+                  <img className="sm:w-4/5 object-contain" src={designProcess} alt="DesignProcess" />
                 </div>
               </div> */}
                         </div>
@@ -257,7 +257,7 @@ const HealSpace = () => {
 
                             </p>
                             <div className={textStyle}>
-                                <p className="sm:w-2/3">
+                                <p className="sm:w-4/5">
                                     Thing from the future is an award-winning imagination game that challenges players to collaboratively and competitively describe objects from a range of alternative futures.
                                     It’s a game where you draw 4 cards and each card describes a scenario.
                                     <br /> <br />
@@ -295,7 +295,7 @@ const HealSpace = () => {
                                 {"Comping up with the prompt"}
                             </p>
                             <div className={textStyle}>
-                                <p className="sm:w-2/3">
+                                <p className="sm:w-4/5">
                                     We had a few minutes to come up with the prompt that would describe the story of our app. <br></br><br></br>
                                     Prompt I came up with based on the TFTF prompts -
 
@@ -433,7 +433,7 @@ const HealSpace = () => {
                                 {"Movie"}
                             </p>
                             <div className={textStyle}>
-                            <div className="sm:w-2/3">
+                            <div className="sm:w-4/5">
 
                                 <p>
                                     Grab some popcorn because its movie time!
@@ -459,7 +459,7 @@ const HealSpace = () => {
 
                         </div>
                             {/* <div className="flex flex-col sm:flex-row items-center">
-                                <img className="sm:w-2/3 object-contain" src={DesktopView} alt="DesktopView" />
+                                <img className="sm:w-4/5 object-contain" src={DesktopView} alt="DesktopView" />
                                 <img className="w-2/3 sm:w-1/3 p-5 object-contain" src={MobileView} alt="DesktopView" />
                             </div> */}
 
@@ -474,7 +474,7 @@ const HealSpace = () => {
                             </p>
                         </div>
                         <div className={textStyle}>
-                            <div className="sm:w-2/3">
+                            <div className="sm:w-4/5">
 
                                 <p>
                                    We made a movie and passed the class with a flying grade!
