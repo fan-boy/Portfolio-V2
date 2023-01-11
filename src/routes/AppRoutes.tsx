@@ -11,6 +11,7 @@ import IM360 from "../Pages/WorkDetails/IM360";
 import Hive from "../Pages/WorkDetails/Hive/Hive";
 import HealSpace from "../Pages/WorkDetails/CollegeWork/INST711/HealSpace";
 import trackPathForAnalytics from "../TrackPageForAnalytics";
+import ScrollToTop from "./scrollToTop";
 
 
 const AppRoutes = () =>{
@@ -20,7 +21,7 @@ const AppRoutes = () =>{
     return(
         
         <Router>
-            
+            <ScrollToTop/>
             <Routes>
           <Route path="/about" element={<AboutPage/>}/>
             

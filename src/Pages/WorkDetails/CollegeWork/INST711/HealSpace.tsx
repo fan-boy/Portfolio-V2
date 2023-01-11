@@ -483,7 +483,7 @@ const HealSpace = () => {
                                     <br></br>
                                     
 
-                                    This course taugh me how to keep users engaged and make them feel as if they are living an experience while using a product.
+                                    This course taught me how to keep users engaged and make them feel as if they are living an experience while using a product.
                                     Making the movie taught me the importance of audio and video effects to denote emotions. 
                                   
                                 </p>
