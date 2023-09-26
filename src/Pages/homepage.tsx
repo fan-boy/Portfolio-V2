@@ -114,15 +114,15 @@ const Homepage = () =>{
                         Hello  👋🏼,  I’m Aaditya!
                         </span>
                         <span className="mt-10 flex flex-col">
-                       <span className="font-semibold"><span className="text-blue-400">Curious</span> Product Designer </span>
+                       <span className="font-semibold"><span className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-800 to-blue-500">Curious</span> Product Designer </span>
                        <span className="font-semibold"><span className="text-blue-400">Empathetic</span> Software Developer</span>
                         </span>
                         <span className="mt-10 flex flex-col ">
                         <span className="w-min whitespace-nowrap text-xs sm:text-base text-center"> 
                         HCIM grad student at University of Maryland, CP
                         </span> 
-                        <span className="w-max mt-2 text-xs md:text-base p-2 rounded-lg md:whitespace-nowrap  bg-red-300"> 
-                       Currently looking for Summer 2023 internship
+                        <span className="w-max mt-2 text-xs md:text-base p-2 rounded-lg md:whitespace-nowrap "> 
+                       Graduating May 2024
                         </span> 
                         </span>
                         </div>

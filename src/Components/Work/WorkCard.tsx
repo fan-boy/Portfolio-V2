@@ -25,7 +25,7 @@ const WorkCard = (props:WorkCardProps) =>{
     }
     
     return(
-        <span onClick={onClick} className={` min-w-2/5 rounded-3xl p-10 rounded-lg overflow-hidden ${props.class}`+ (props.loading? ' animate-pulse': ``) + (props.url !==""?` cursor-pointer bg-${props.color}-400 text-white transform transition duration-500 hover:scale-105`:` border border-1 border-${props.color}-400 text-${props.color}-400`)} >
+        <span onClick={onClick} className={` min-w-2/5 rounded-3xl p-10 rounded-lg overflow-hidden ${props.class}`+ (props.loading? ' animate-pulse': ``) + (props.url !==""?` cursor-pointer bg-gradient-to-tr from-red-400 via-red-200  to-${props.color}-400 text-white transform transition duration-500 hover:scale-105`:` border border-1 border-${props.color}-400 text-${props.color}-400`)} >
            {!props.loading && props.imgUrl && props.imgUrl.length >0 && <img className="w-full h-80 object-scale-down" src={props.imgUrl} alt="test"/>}
            <span className="font-sans font-bold text-3xl flex flex-col" >
                 {props.title}
