@@ -124,6 +124,10 @@ const Homepage = () =>{
                         <span className="w-max mt-2 text-xs md:text-base p-2 rounded-lg md:whitespace-nowrap "> 
                        Graduating May 2024
                         </span> 
+
+                        <span className="w-max mt-4 text-xs md:text-base p-2 rounded-lg md:whitespace-nowrap "> 
+                       Portfolio was last updated early 2023. 
+                        </span> 
                         </span>
                         </div>
                     </div>
